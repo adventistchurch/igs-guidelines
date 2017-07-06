@@ -41,7 +41,7 @@ layout: default
 
 					{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
 
-					{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.html{% endcapture %}
+					{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.markuponly.html{% endcapture %}
 					<div class="iffframe">
 
 						<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="{{ path | prepend: site.baseurl }}"></iframe>
@@ -72,7 +72,7 @@ layout: default
 
 			{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
 
-			{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.html{% endcapture %}
+			{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.markuponly.html{% endcapture %}
 
 			<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-{{ variation.title | downcase | replace: ' ', '-' }}">
 
