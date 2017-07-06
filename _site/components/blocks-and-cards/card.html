@@ -9696,7 +9696,7 @@
 					
 					<div class="iffframe">
 
-						<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="/patterns/01-molecules-blocks-carousel-block/01-molecules-blocks-carousel-block.html"></iframe>
+						<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="/patterns/01-molecules-02-blocks-card/01-molecules-02-blocks-card.html"></iframe>
 
 						<div class="iffframe__handle"></div>
 
@@ -9749,71 +9749,34 @@
 							<div class="pattern-code">
 								<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
 								<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;div class="carousel-block block spacing--quarter "&gt;
-      &lt;h2 class="font--tertiary--m theme--primary-text-color pad pad-half--btm"&gt;
-            Mauris sit
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a href="#" class="c-card "&gt;
+
+  &lt;div class="c-card__header"&gt;
+    Card header
+  &lt;/div&gt;
+
+  &lt;div class="c-card__body"&gt;
+
+    &lt;h2 class="c-card__title"&gt;
+      &lt;span class="c-card__title-text"&gt;Card Heading&lt;/span&gt;
+      &lt;svg class="c-icon c-card__icon"&gt;
+				&lt;use href="..&amp;#x2F;..&amp;#x2F;icons.svg#chevron-right"&gt;&lt;/use&gt;
+			&lt;/svg&gt;
     &lt;/h2&gt;
-    &lt;div class="carousel-block__carousel carousel-nav--4-3"&gt;&lt;div class="carousel rel "&gt;
-  &lt;div class="carousel__slides js-carousel__single-item"&gt;
-                  &lt;div class="carousel__item rel "&gt;
+    &lt;!-- end c-card__title --&gt;
 
-      &lt;picture class="picture"&gt;
-  &lt;!--[if IE 9]&gt;&lt;video style="display: none;"&gt;&lt;![endif]--&gt;
-      &lt;source srcset="//unsplash.it/800/600/?random" media="(min-width: 500px)"&gt;
-  &lt;!--[if IE 9]&gt;&lt;/video&gt;&lt;![endif]--&gt;
+    &lt;p class="c-card__desc"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam&lt;/p&gt;
 
-      &lt;img itemprop="image" srcset="//unsplash.it/500/375/?random" alt="Alt Text"&gt;
-  &lt;/picture&gt;
-  
-  
-      &lt;div class="carousel-block__content block__content spacing--quarter pad "&gt;
-              &lt;h3 class="carousel-block__title block__title font--secondary--m"&gt;
-          &lt;a href="" class="block__title-link theme--primary-text-color"&gt;Proin venenatis maximus&lt;/a&gt;
-        &lt;/h3&gt;
-                    &lt;time class="block__date font--secondary--xs brown space-half--btm" datetime="2016-12-12"&gt;Mar 28, 2016&lt;/time&gt;
-                    &lt;div class="text pad-half--btm"&gt;
-          &lt;p class="carousel-block__description block__description"&gt;
-            &lt;span class="font--primary--xs"&gt;Mauris sit amet augue gravida, dignissim sem maximus, aliquam metus. Maecenas eu consectetur orci, id auctor dui.&lt;/span&gt;
-          &lt;/p&gt;
-        &lt;/div&gt;
-                    &lt;p&gt;
-          &lt;a class="carousel-block__cta block__cta btn theme--secondary-background-color" href=""&gt;Donec volutpat libero&lt;/a&gt;
-        &lt;/p&gt;
-          &lt;/div&gt; &lt;!-- carousel-block__content --&gt;
-  
-&lt;/div&gt; &lt;!-- /.carousel__item --&gt;
-                        &lt;div class="carousel__item rel "&gt;
+  &lt;/div&gt;
+  &lt;!-- end c-card__body --&gt;
 
-      &lt;picture class="picture"&gt;
-  &lt;!--[if IE 9]&gt;&lt;video style="display: none;"&gt;&lt;![endif]--&gt;
-      &lt;source srcset="//unsplash.it/800/600/" media="(min-width: 500px)"&gt;
-  &lt;!--[if IE 9]&gt;&lt;/video&gt;&lt;![endif]--&gt;
+  &lt;div class="c-card__footer"&gt;
+    Card footer
+  &lt;/div&gt;
+  &lt;!-- end c-card__footer --&gt;
 
-      &lt;img itemprop="image" srcset="//unsplash.it/500/375/" alt="Alt Text"&gt;
-  &lt;/picture&gt;
-  
-  
-      &lt;div class="carousel-block__content block__content spacing--quarter pad "&gt;
-              &lt;h3 class="carousel-block__title block__title font--secondary--m"&gt;
-          &lt;a href="" class="block__title-link theme--primary-text-color"&gt;Sed sagittis massa id blandit aliquet&lt;/a&gt;
-        &lt;/h3&gt;
-                    &lt;time class="block__date font--secondary--xs brown space-half--btm" datetime="2016-12-12"&gt;Mar 28, 2016&lt;/time&gt;
-                    &lt;div class="text pad-half--btm"&gt;
-          &lt;p class="carousel-block__description block__description"&gt;
-            &lt;span class="font--primary--xs"&gt;Fusce interdum purus est, vel semper ex tristique ut Pellentesque semper tincidunt ex sit amet tincidunt.&lt;/span&gt;
-          &lt;/p&gt;
-        &lt;/div&gt;
-                    &lt;p&gt;
-          &lt;a class="carousel-block__cta block__cta btn theme--secondary-background-color" href=""&gt;Cras at sem&lt;/a&gt;
-        &lt;/p&gt;
-          &lt;/div&gt; &lt;!-- carousel-block__content --&gt;
-  
-&lt;/div&gt; &lt;!-- /.carousel__item --&gt;
-            &lt;/div&gt; &lt;!-- /.carousel__slides --&gt;
-
-  &lt;/div&gt; &lt;!-- /.carousel --&gt;
-&lt;/div&gt;
-&lt;/div&gt; &lt;!-- /.carousel-block --&gt;</code></pre></figure>
+&lt;/a&gt;
+&lt;!-- end c-card --&gt;</code></pre></figure>
 </code></pre>
 							</div>
 

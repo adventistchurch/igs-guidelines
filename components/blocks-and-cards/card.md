@@ -13,8 +13,8 @@ variations:
   description: Carousel blocks are used throughout the site.
   styleModifier: block__carousel
   includeClassification: molecules
-  includeCategory: blocks
-  includeName: carousel-block
+  includeCategory: 02-blocks
+  includeName: card
 
   usage:
   - title: When to use
