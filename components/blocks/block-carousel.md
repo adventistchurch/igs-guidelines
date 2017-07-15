@@ -1,32 +1,20 @@
 ---
 layout: component-detail
 group: components
-subgroup: blocks-and-cards
-permalink: /components/blocks-and-cards/hero.html
+subgroup: blocks
+permalink: /components/blocks/block-carousel.html
 
-title: Hero
-description: Large-format unit to promote content with a high-impact image
+title: Carousel Block
+description: Block layout with a carousel.
 
 
 variations:
-- title: Default hero
-  description: Default hero that has no gradient overlay
-  styleModifier: c-hero
+- title: Default Carousel Block
+  description: Default carousel block implementation
   includeClassification: molecules
-  includeCategory: 02-blocks
-  includeName: hero
-- title: Blue tint hero
-  description: Hero with a blue gradient overlay
-  styleModifier: c-hero c-hero--blue-tint
-  includeClassification: molecules
-  includeCategory: 02-blocks
-  includeName: hero-blue-tint
-- title: Red tinted hero
-  description: Hero with a red gradient overlay
-  styleModifier: c-hero c-hero--red-tint
-  includeClassification: molecules
-  includeCategory: 02-blocks
-  includeName: hero-red-tint
+  includeCategory: blocks
+  includeName: carousel-block
+
 
 usage:
 - title: When to use
