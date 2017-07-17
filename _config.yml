@@ -18,4 +18,5 @@ twitter_username: brad_frost
 github_username:  bradfrost
 
 # Build settings
+highlighter: highlighter
 markdown: kramdown

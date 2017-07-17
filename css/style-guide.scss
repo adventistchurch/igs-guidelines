@@ -154,7 +154,6 @@ code[class*="language-"], pre[class*="language-"] {
 .pattern-code-block {
     margin-top: 0;
     max-height: 25rem;
-	overflow-y: hidden;
 
     .is-expanded & {
 		max-height: none;

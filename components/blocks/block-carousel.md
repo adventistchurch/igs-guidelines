@@ -17,10 +17,10 @@ variations:
 
 
 usage:
-- title: When to use
-  description: Usage description.
-- title: When to consider an alternative
-  description: Alternative usage.
+- title: This is the "When to Use" dynamic section
+  description: This is the description for the first section
+- title: This is another usage group
+  description: This is another description for this second group.
 
 classes:
 - className: c-hero

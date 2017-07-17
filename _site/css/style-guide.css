@@ -88,8 +88,7 @@ code[class*="language-"], pre[class*="language-"] {
  */
 .pattern-code-block {
   margin-top: 0;
-  max-height: 25rem;
-  overflow-y: hidden; }
+  max-height: 25rem; }
   .is-expanded .pattern-code-block {
     max-height: none; }
 
