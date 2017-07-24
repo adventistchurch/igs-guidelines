@@ -6,6 +6,8 @@ _includes/patterns/*
 _site/
 .jekyll-metadata
 *.css.map
+.DS_Store
+
 
 # Ignore IDE-specific files
 *.sublime-project
