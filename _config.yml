@@ -6,17 +6,20 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Style Guide Guide
-email: brad@bradfrost.com
+title: Adventist Idenity Guideline System
+email: hardingeb@gc.adventist.org
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The Identity Guideline System helps the Adventist Church unite our
+  spoken, published, and produced materials to present a unified
+  identity of logo & branding.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: brad_frost
-github_username:  bradfrost
+twitter_username: adventistchurch
+# github_username:  bradfrost
 
 # Build settings
 highlighter: highlighter
 markdown: kramdown
+
+gems:
+  - jekyll-last-modified-at
