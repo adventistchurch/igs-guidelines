@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Style Guide Guide</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Adventist Idenity Guideline System</title>
+    <description>The Identity Guideline System helps the Adventist Church unite our spoken, published, and produced materials to present a unified identity of logo &amp; branding.
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Jul 2017 20:38:44 -0700</pubDate>
-    <lastBuildDate>Sun, 23 Jul 2017 20:38:44 -0700</lastBuildDate>
+    <pubDate>Tue, 25 Jul 2017 11:34:25 -0500</pubDate>
+    <lastBuildDate>Tue, 25 Jul 2017 11:34:25 -0500</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -20,9 +20,9 @@
   &lt;li&gt;Of new features&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 13 May 2017 23:00:00 -0700</pubDate>
-        <link>http://localhost:4000/update/2017/05/13/v1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/update/2017/05/13/v1.html</guid>
+        <pubDate>Sun, 14 May 2017 01:00:00 -0500</pubDate>
+        <link>http://localhost:4000/update/2017/05/14/v1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/update/2017/05/14/v1.html</guid>
         
         
         <category>update</category>
@@ -33,9 +33,9 @@
         <title>Initial Release</title>
         <description>&lt;p&gt;This is the blog post description announcing the initial release of the design system. Here you can talk about what contents the design system contains, where to find things, who’s involved with the system, and so on.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 12 May 2017 23:00:00 -0700</pubDate>
-        <link>http://localhost:4000/update/2017/05/12/initial-release.html</link>
-        <guid isPermaLink="true">http://localhost:4000/update/2017/05/12/initial-release.html</guid>
+        <pubDate>Sat, 13 May 2017 01:00:00 -0500</pubDate>
+        <link>http://localhost:4000/update/2017/05/13/initial-release.html</link>
+        <guid isPermaLink="true">http://localhost:4000/update/2017/05/13/initial-release.html</guid>
         
         
         <category>update</category>
