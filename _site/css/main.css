@@ -452,7 +452,10 @@ code {
   border: 1px solid #ddd;
   padding: .2rem .5rem;
   line-height: 1.2;
-  font-size: .85rem; }
+  font-size: .85rem;
+  font-family: Menlo, Monaco, "Courier New", "Courier", monospace; }
+  code.nowrap {
+    white-space: nowrap; }
 
 /**
  * Preformatted text base styles
