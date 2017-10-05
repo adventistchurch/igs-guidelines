@@ -1,0 +1,26 @@
+{
+  "name": "IGS",
+  "version": "0.0.1",
+  "description": "Adventist Identity Guideline System documentation",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:adventistchurch/igs-guidelines.git"
+  },
+  "author": "Southleft, LLC",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "homepage": "http://adventist.org",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-shell": "^2.1.0",
+    "matchdep": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "compileTemplates": false
+}
