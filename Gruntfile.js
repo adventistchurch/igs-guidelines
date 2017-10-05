@@ -1,5 +1,10 @@
 module.exports = function(grunt) {
-  require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
+
+  // Show elapsed time after tasks run to measure performance.
+  require('time-grunt')(grunt);
+
+  // Load all Grunt tasks that are listed in package.json.
+  require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -88,13 +93,15 @@ module.exports = function(grunt) {
   // Grunt serve task.
   grunt.registerTask('serve', [
     'browserSync',
-    'concurrent:serve'
+    'concurrent:serve',
+    'autoprefixer'
   ]);
 
   // Grunt build task.
   grunt.registerTask('build', [
     'shell:jekyllBuild',
-    'sass'
+    'sass',
+    'autoprefixer'
   ]);
 
   // Register build as the default task fallback.

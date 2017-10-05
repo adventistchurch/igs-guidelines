@@ -20,7 +20,7 @@ twitter_username: adventistchurch
 # Build settings
 highlighter: highlighter
 markdown: kramdown
-exclude: [‘css’, ‘_scss’]
+exclude: [node_modules, ‘css’, ‘_scss’]
 keep_files: ['_site/css']
 
 plugins:
