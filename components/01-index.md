@@ -1,6 +1,6 @@
 ---
 layout: component-category
-title: Components
+title: ALPS Components
 group: components
 permalink: /components/
 description: Component overview description
