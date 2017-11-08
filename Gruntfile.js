@@ -52,11 +52,11 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['_sass/**/*.scss'],
-        tasks: ['sass']
+        tasks: ['sass','autoprefixer']
       },
       jekyll: {
         files: ['**/*.{md,html}'],
-        tasks: ['shell:jekyllBuild']
+        tasks: ['shell:jekyllBuild','sass','autoprefixer']
       }
     },
 
@@ -74,18 +74,6 @@ module.exports = function(grunt) {
           baseDir: './_site'
         }
       }
-    },
-
-    // Run tasks in parallel.
-    concurrent: {
-      serve: [
-        'sass',
-        'watch',
-        'shell:jekyllBuild'
-      ],
-      options: {
-        logConcurrentOutput: true
-      }
     }
 
   });
@@ -93,8 +81,9 @@ module.exports = function(grunt) {
   // Grunt serve task.
   grunt.registerTask('serve', [
     'browserSync',
-    'concurrent:serve',
-    'autoprefixer'
+    'shell:jekyllBuild',
+    'sass',
+    'watch'
   ]);
 
   // Grunt build task.
