@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adventist Idenity Guideline System</title>
+    <description>The Identity Guideline System helps the Adventist Church unite our spoken, published, and produced materials to present a unified identity of logo &amp; branding.
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 08 Nov 2017 08:46:51 -0600</pubDate>
+    <lastBuildDate>Wed, 08 Nov 2017 08:46:51 -0600</lastBuildDate>
+    <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>Version 1.0</title>
+        <description>&lt;p&gt;Here’s the post announcing the 1.0 release of the design system. Here you would talk about what features have been added, announce any pilot projects that have been built using the design system, who’s involved, and so on.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Here’s a&lt;/li&gt;
+  &lt;li&gt;Bulleted list&lt;/li&gt;
+  &lt;li&gt;Of new features&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 14 May 2017 01:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/update/2017/05/14/v1.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/update/2017/05/14/v1.html</guid>
+        
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Initial Release</title>
+        <description>&lt;p&gt;This is the blog post description announcing the initial release of the design system. Here you can talk about what contents the design system contains, where to find things, who’s involved with the system, and so on.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 13 May 2017 01:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/update/2017/05/13/initial-release.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/update/2017/05/13/initial-release.html</guid>
+        
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
