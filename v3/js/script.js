@@ -44,10 +44,21 @@
     });
   }
 
-  var divs = $('.l-sabbath__logo-light');
+  // Sabbath Logo Icon
+  var headerHeight = $('.c-header').outerHeight();
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > headerHeight) {
+      $('.js-show-on-scroll').removeClass('is-hidden').addClass('is-visible');
+    } else {
+      $('.js-show-on-scroll').removeClass('is-visible').addClass('is-hidden');
+    }
+  });
+
   $(window).scroll(function(){
-     var percent = $(document).scrollTop() / ($(document).height() - $(window).height());
-     divs.css('opacity', 1 - percent);
+     var percent = $(document).scrollTop() / ($(document).height() - ($(document).height() - $(window).height() - ($(window).height() / 2)));
+     $('.l-sabbath__logo-light').css('opacity', 1 - percent);
+     $('.l-sabbath__overlay').css('opacity', 1 - percent);
   });
 
   // Check window width
@@ -159,16 +170,18 @@
 
     if ($(this).hasClass('this-is-active')) {
       $(this).removeClass('this-is-active');
-      $(this).parent().parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().removeClass('this-is-active');
-      $(this).parent().parent().parent().parent().parent().removeClass('this-is-active');
+      $(this).parents('.c-primary-nav__list').removeClass('this-is-active');
+      $(this).parents('.c-drawer__nav-primary').removeClass('this-is-active');
+      $(this).parents('.c-primary-nav').removeClass('this-is-active');
+      $(this).parents('.c-drawer__nav').children('.c-drawer__subnav').removeClass('this-is-active');
+      $(this).parents('.c-drawer__nav').removeClass('this-is-active');
     } else {
       $(this).addClass('this-is-active');
-      $(this).parent().parent().addClass('this-is-active');
-      $(this).parent().parent().parent().parent().addClass('this-is-active');
-      $(this).parent().parent().parent().addClass('this-is-active');
-      $(this).parent().parent().parent().parent().parent().addClass('this-is-active');
+      $(this).parents('.c-primary-nav__list').addClass('this-is-active');
+      $(this).parents('.c-drawer__nav-primary').addClass('this-is-active');
+      $(this).parents('.c-primary-nav').addClass('this-is-active');
+      $(this).parents('.c-drawer__nav').children('.c-drawer__subnav').addClass('this-is-active');
+      $(this).parents('.c-drawer__nav').addClass('this-is-active');
       $(this).parent('li').clone().appendTo('.c-drawer__subnav');
     }
 
@@ -221,13 +234,15 @@
       autoplaySpeed: 4000,
       cssEase: 'ease-out',
       fade: true,
-      nextArrow: '.arrow__next',
-      prevArrow: '.arrow__prev',
+      nextArrow: '.c-arrow__next',
+      prevArrow: '.c-arrow__prev',
       touchThreshold: 11,
       dots: true,
       adaptiveHeight: true
     });
   }
+
+
 
   // Slick carousel (multiple items)
   if ($('.js-carousel__multi-item').length) {
@@ -237,8 +252,9 @@
       autoplay: true,
       autoplaySpeed: 4000,
       cssEase: 'ease-out',
-      nextArrow: '.arrow__next',
-      prevArrow: '.arrow__prev',
+      arrows: true,
+      prevArrow:'<span class="c-arrow c-arrow--prev u-icon u-icon--s u-theme--color--darker">&#8249;</span>',
+      nextArrow:'<span class="c-arrow c-arrow--next u-icon u-icon--s u-theme--color--darker">&#8250;</span>',
       touchThreshold: 11,
       dots: false,
       slidesToShow: 1,
@@ -252,10 +268,17 @@
           }
         },
         {
-          breakpoint: 700,
+          breakpoint: 900,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 6
           }
         }
       ]
@@ -286,7 +309,7 @@
 
   // Responsive videos
   if ($.fn.fitVids) {
-    $('.article__body, .text, .fitvid').fitVids();
+    $('.c-article__body, .text, .fitvid').fitVids();
   }
 
   // Apply parallax effect to background images.
@@ -347,7 +370,7 @@
   }
 
   // Theme switcher for colors
-  $('.c-swatches--colors .c-swatches__item').click(function(){
+  $('.c-swatches--colors .c-swatches__item').click(function() {
     var thisColor = $(this).data('color');
 
     $('.c-swatches--colors .c-swatches__item').removeClass('active');
