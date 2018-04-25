@@ -2,8 +2,8 @@
 layout: page
 type: detail
 title: Color
-group: styles
-permalink: /styles/color.html
+group: style
+permalink: /style/color.html
 description: Color styles define how color is used in the design system.
 
 ---

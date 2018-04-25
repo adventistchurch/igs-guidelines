@@ -2,8 +2,8 @@
 layout: page
 type: detail
 title: Iconography
-group: styles
-permalink: /styles/iconography.html
+group: style
+permalink: /style/iconography.html
 description: How to style or construct icons for the design system
 
 ---

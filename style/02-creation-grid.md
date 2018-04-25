@@ -1,10 +1,10 @@
 ---
 layout: page
 type: detail
-title: Design tokens
-group: styles
-permalink: /styles/design-tokens.html
-description: Design token information
+title: Creation Grid
+group: style
+permalink: /style/creation-grid.html
+description: Information about the Creation Grid.
 
 ---
 

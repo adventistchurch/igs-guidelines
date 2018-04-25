@@ -2,8 +2,8 @@
 layout: page
 type: detail
 title: Imagery
-group: styles
-permalink: /styles/imagery.html
+group: style
+permalink: /style/imagery.html
 description: Styles for treating pictures and graphics
 
 ---

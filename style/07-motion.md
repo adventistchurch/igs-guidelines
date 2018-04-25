@@ -2,8 +2,8 @@
 layout: page
 type: detail
 title: Motion
-group: styles
-permalink: /styles/motion.html
+group: style
+permalink: /style/motion.html
 description: How the style guide uses motion to enhance the user experience.
 
 ---

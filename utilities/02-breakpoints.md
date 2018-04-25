@@ -11,8 +11,11 @@ usage:
   description: ALPS uses 6 defined breakpoints, that are used in creating the SASS files.
 
 classes:
+
+- className: XSmall
+  description: 350 pixels. This is for targeting very small screensizes.
 - className: Small
-  description: 400 pixels. This is considered the typical `mobile` size.
+  description: 500 pixels. This is considered the typical `mobile` size.
 - className: Medium
   description: 700 pixels. This is considered the typical `tablet` size.
 - className: Large

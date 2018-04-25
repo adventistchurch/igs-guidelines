@@ -2,8 +2,8 @@
 layout: page
 type: detail
 title: Typography
-group: styles
-permalink: /styles/typography.html
+group: style
+permalink: /style/typography.html
 description: Typography style description
 
 ---
