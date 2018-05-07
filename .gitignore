@@ -1,8 +1,6 @@
 .DS_Store
 /node_modules
 .sass-cache/
-/patterns/*
-_includes/patterns/*
 _site/
 .jekyll-metadata
 *.css.map
