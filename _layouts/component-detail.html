@@ -48,11 +48,7 @@ layout: default
 
 					{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
 
-<<<<<<< HEAD
 					{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.html{% endcapture %}
-=======
-					{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.rendered.html{% endcapture %}
->>>>>>> 3d20a901df50a67d315efe04d0030697cbe1d6ea
 
 					<div class="iffframe">
 
@@ -102,7 +98,6 @@ layout: default
 					</li><!-- end c-tabs__item -->
 
 					<li class="c-tabs__item">
-<<<<<<< HEAD
 						<a href="#twig-{{ forloop.index }}" class="c-tabs__link js-tab">Twig</a>
 					</li><!-- end c-tabs__item -->
 
@@ -119,32 +114,9 @@ layout: default
 							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
 						</div>
 
-					</div><!--end c-tabs__panel-->
-=======
-						<a href="#angular-{{ forloop.index }}" class="c-tabs__link js-tab">Angular</a>
-					</li><!-- end c-tabs__item -->
-
-					<li class="c-tabs__item">
-						<a href="#react-{{ forloop.index }}" class="c-tabs__link js-tab">React</a>
-					</li><!-- end c-tabs__item -->
-
-				</ul><!-- end c-tabs__list -->
-
-				<div class="c-tabs__body ">
-
-					<div class="c-tabs__panel js-tabs-panel" id="html-{{ forloop.index }}">
-
-						{% capture markupOnlyPath %}/patterns/{{ componentString }}/{{ componentString }}.markup-only.html{% endcapture %}
-
-						<div class="pattern-code">
-							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
-							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
-						</div>
->>>>>>> 3d20a901df50a67d315efe04d0030697cbe1d6ea
 
 					</div><!--end c-tabs__panel-->
 
-<<<<<<< HEAD
 					<div class="c-tabs__panel js-tabs-panel" id="twig-{{ forloop.index }}">
 
 						{% capture markupOnlyPath %}/patterns/{{ componentString }}/{{ componentString }}.twig{% endcapture %}
@@ -158,29 +130,6 @@ layout: default
 
 				</div><!-- end c-tabs__body-->
 
-=======
-
-					<div class="c-tabs__panel js-tabs-panel" id="angular-{{ forloop.index }}">
-
-						<div class="pattern-code">
-							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
-							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">THIS IS ANGULAR CODE</code></pre>
-						</div>
-
-					</div><!--end c-tabs__panel-->
-
-					<div class="c-tabs__panel js-tabs-panel" id="react-{{ forloop.index }}">
-
-						<div class="pattern-code">
-							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
-							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">THIS IS REACT CODE</code></pre>
-						</div>
-
-					</div><!--end c-tabs__panel-->
-
-				</div><!-- end c-tabs__body-->
-
->>>>>>> 3d20a901df50a67d315efe04d0030697cbe1d6ea
 			</div><!-- end c-tabs -->
 			{% endif %}
 
@@ -194,11 +143,7 @@ layout: default
 
 <section class="c-section">
 
-<<<<<<< HEAD
 	{% if page.usage %}
-	
-=======
->>>>>>> 3d20a901df50a67d315efe04d0030697cbe1d6ea
 	<div class="c-section-header ">
 
 		<h1 class="c-section-header__title">Usage</h1>
@@ -206,8 +151,6 @@ layout: default
 	</div><!-- end c-section-header -->
 
 	<div class="c-text-passage l-linelength-container">
-<<<<<<< HEAD
-
 		{% include definition-list.html %}
 
 	</div><!-- end c-text-passage -->
@@ -217,7 +160,6 @@ layout: default
 
 		<table class="c-table ">
 
-=======
 
 		{% include definition-list.html %}
 
@@ -227,7 +169,6 @@ layout: default
 
 		<table class="c-table ">
 
->>>>>>> 3d20a901df50a67d315efe04d0030697cbe1d6ea
 			<thead class="c-table__header">
 
 				<tr class="c-table__header-row">
@@ -243,13 +184,9 @@ layout: default
 				<tr class="c-table__row ">
 
 					<td class="c-table__cell ">
-<<<<<<< HEAD
 						<code class="nowrap">
 							{{ class.className }}	
 						</code>
-=======
-						{{ class.className }}
->>>>>>> 3d20a901df50a67d315efe04d0030697cbe1d6ea
 					</td>
 
 					<td class="c-table__cell ">
@@ -259,19 +196,12 @@ layout: default
 
 				</tr><!-- end c-table__row -->
 				{% endfor %}
-<<<<<<< HEAD
+
 
 			</tbody><!-- end c-table__body -->
 
 		</table><!--end c-table-->
 
-=======
-
-			</tbody><!-- end c-table__body -->
-
-		</table><!--end c-table-->
-
->>>>>>> 3d20a901df50a67d315efe04d0030697cbe1d6ea
 	</div><!--end c-table-container-->
 
 </section><!-- end c-section -->
@@ -285,12 +215,9 @@ layout: default
 	</div><!-- end c-section-header -->
 
 	<div class="c-text-passage l-linelength-container">
-<<<<<<< HEAD
 			<ul>
 					<li>Last updated: {{ page.last_modified_at | date: '%A %d-%B-%Y at %H:%M:%S' }}</li>
 				</ul>
-=======
->>>>>>> 3d20a901df50a67d315efe04d0030697cbe1d6ea
 		{% for print in page.fine-print %}
         <ul>
             <li>Version: {{ print.version }}</li>
@@ -302,8 +229,4 @@ layout: default
 
 	<a href="#" class="c-btn">Discuss this component</a><!-- end c-btn -->
 
-<<<<<<< HEAD
 </section><!-- end c-section -->
-=======
-</section><!-- end c-section -->
->>>>>>> 3d20a901df50a67d315efe04d0030697cbe1d6ea
