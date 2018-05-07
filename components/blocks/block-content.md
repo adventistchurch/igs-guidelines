@@ -6,6 +6,8 @@ permalink: /components/blocks/block-content.html
 
 title: Content Block
 description: A block layout for creating a heading along with a teaser and CTA.
+status: Complete
+
 
 
 variations:
