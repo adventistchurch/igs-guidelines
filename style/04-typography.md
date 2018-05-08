@@ -3,7 +3,7 @@ layout: page
 type: detail
 title: Typography
 group: style
-permalink: /style/typography.html
+permalink: /style/typography
 description: Typography style description
 
 ---

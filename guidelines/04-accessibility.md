@@ -3,7 +3,7 @@ layout: page
 type: detail
 title: Accessibility
 group: guidelines
-permalink: /guidelines/accessibility.html
+permalink: /guidelines/accessibility
 description: Describe the design system's approach to accessibility
 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: component-detail
 group: utilities
-permalink: /utilities/right-to-left.html
+permalink: /utilities/right-to-left
 
 title: Right to Left
 description: Classes used to deal with Right-to-Left layouts.

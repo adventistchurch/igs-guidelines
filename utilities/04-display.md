@@ -1,7 +1,7 @@
 ---
 layout: component-detail
 group: utilities
-permalink: /utilities/display.html
+permalink: /utilities/display
 
 title: Display
 description: The display states 

@@ -2,7 +2,7 @@
 layout: component-detail
 group: components
 subgroup: blocks
-permalink: /components/blocks/block-content.html
+permalink: /components/blocks/block-content
 
 title: Content Block
 description: A block layout for creating a heading along with a teaser and CTA.

@@ -1,7 +1,7 @@
 ---
 layout: component-detail
 group: utilities
-permalink: /utilities/breakpoints.html
+permalink: /utilities/breakpoints
 
 title: Breakpoints
 description: The common breakpoints used in ALPS.

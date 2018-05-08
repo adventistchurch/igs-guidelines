@@ -1,7 +1,7 @@
 ---
 layout: component-detail
 group: utilities
-permalink: /utilities/borders.html
+permalink: /utilities/borders
 
 title: Borders
 description: Border classes to add horizontal borders to block-level elements.

@@ -3,7 +3,7 @@ layout: page
 type: detail
 title: Data validation
 group: guidelines
-permalink: /guidelines/data-validation.html
+permalink: /guidelines/data-validation
 description: Guidelines around validating data
 
 

@@ -1,7 +1,7 @@
 ---
 layout: component-detail
 group: utilities
-permalink: /utilities/padding.html
+permalink: /utilities/padding
 
 title: Padding
 description: Adjust whitespace with horizontal and vertical spacing with`block` level `padding` adjustment helpers.

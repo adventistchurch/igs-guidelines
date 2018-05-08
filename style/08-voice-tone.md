@@ -3,7 +3,7 @@ layout: page
 type: detail
 title: Voice and tone
 group: style
-permalink: /style/voice-tone.html
+permalink: /style/voice-tone
 description: Capturing the personality and authority of the brand in words
 
 ---

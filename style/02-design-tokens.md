@@ -3,7 +3,7 @@ layout: page
 type: detail
 title: Design tokens
 group: style
-permalink: /style/design-tokens.html
+permalink: /style/design-tokens
 description: Design token information
 
 ---

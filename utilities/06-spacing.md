@@ -1,7 +1,7 @@
 ---
 layout: component-detail
 group: utilities
-permalink: /utilities/spacing.html
+permalink: /utilities/spacing
 
 title: Spacing
 description: Adjust whitespace with horizontal and vertical spacing with `block` level `margin` adjustment helpers.

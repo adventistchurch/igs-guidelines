@@ -1,7 +1,7 @@
 ---
 layout: component-detail
 group: utilities
-permalink: /utilities/filters.html
+permalink: /utilities/filters
 
 title: Filters
 description: CSS-based image filters to provide consistency to images on your site in ALPS.

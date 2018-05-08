@@ -3,7 +3,7 @@ layout: page
 type: detail
 title: Browser support
 group: guidelines
-permalink: /guidelines/browsers.html
+permalink: /guidelines/browsers
 description: Guidelines that explain which browsers the design system is optimized for
 
 

@@ -2,7 +2,7 @@
 layout: page
 title: Design Principles
 group: guidelines
-permalink: /guidelines/principles.html
+permalink: /guidelines/principles
 description: The design system's guiding values
 
 

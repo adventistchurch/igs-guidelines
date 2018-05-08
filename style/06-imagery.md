@@ -3,7 +3,7 @@ layout: page
 type: detail
 title: Imagery
 group: style
-permalink: /style/imagery.html
+permalink: /style/imagery
 description: Styles for treating pictures and graphics
 
 ---

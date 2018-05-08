@@ -1,7 +1,7 @@
 ---
 layout: component-detail
 group: utilities
-permalink: /utilities/color.html
+permalink: /utilities/color
 
 title: Color
 description: Common color modifier classes.

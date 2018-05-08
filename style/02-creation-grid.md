@@ -3,7 +3,7 @@ layout: page
 type: detail
 title: Creation Grid
 group: style
-permalink: /style/creation-grid.html
+permalink: /style/creation-grid
 description: Information about the Creation Grid.
 
 ---

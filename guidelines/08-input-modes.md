@@ -3,7 +3,7 @@ layout: page
 type: detail
 title: Input modes
 group: guidelines
-permalink: /guidelines/input-modes.html
+permalink: /guidelines/input-modes
 description: Guidelines around multiple types of input
 
 ---

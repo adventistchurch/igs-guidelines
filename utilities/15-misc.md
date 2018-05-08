@@ -1,7 +1,7 @@
 ---
 layout: component-detail
 group: utilities
-permalink: /utilities/misc.html
+permalink: /utilities/misc
 
 title: Miscellaneous Classes
 description: Various classes that don't fit other categories.
