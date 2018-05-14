@@ -1,0 +1,39 @@
+primary_menu:
+  -
+    title: Global Elements
+    url: /global-elements
+    subitems:
+      -
+        title: The Creation Grid
+        url: /creation-grid
+      -
+        title: The Church Symbol
+        url: /church-symbol
+  -
+    title: How To
+    url: /how-to-use-these-guidelines/
+
+secondary_menu:
+  -
+    title: Slack
+    url: /slack
+    class: slack
+  -
+    title: Contact Us
+    url: /contact
+    class: contact
+
+
+social_menu:
+  -
+    title: Facebook
+    url: https://www.facebook.com/gaincon
+    icon: icon-facebook
+  -
+    title: Twitter
+    url: https://twitter.com/gaincon
+    icon: icon-twitter
+  -
+    title: Email
+    url: mailto:gainconf@gmail.com
+

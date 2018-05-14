@@ -19,8 +19,8 @@
  * Primary navigation list
  */
 .c-primary-nav__list {
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
 
 	/**
 	 * Primary navigation list within a vertical header
@@ -30,7 +30,7 @@
 	}
 
 	@media all and (min-width: $bp-xl) {
-		flex-direction: row;
+		// flex-direction: row;
 	}
 }
 
@@ -97,8 +97,8 @@
  * Primary navigation link with subnavigation
  */
 .c-primary-nav__link--has-children {
-	display: flex;
-	align-items: center;
+	// display: flex;
+	// align-items: center;
 
 	/**
 	 * Primary navigation link withing active item
