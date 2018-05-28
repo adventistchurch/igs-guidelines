@@ -12,6 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   The Identity Guideline System helps the Adventist Church unite our
   spoken, published, and produced materials to present a unified
   identity of logo & branding.
+footer_desc:
+  identity.adventist.org is the official Identity Guidelines website of the Seventh-day Adventist world church
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: adventistchurch
@@ -19,7 +21,7 @@ github_username:  adventistchurch
 
 
 # ALPS Theme Color Options
-# 
+#
 ## Bright
 # Treefrog:   u-theme--treefrog
 # Ming:       u-theme--ming
@@ -43,7 +45,6 @@ github_username:  adventistchurch
 html_classes: u-theme--campfire
 
 body_classes: has-grid
-
 
 # Build settings
 highlighter: rouge

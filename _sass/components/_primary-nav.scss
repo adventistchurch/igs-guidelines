@@ -105,7 +105,7 @@
 	 */
 	.c-primary-nav__item.is-active & {
 		@media all and (min-width: $bp-xl) {
-			background: $color-gray-73;
+			background: $color-gray-60;
 			color: $color-white;
 		}
 	}
@@ -176,10 +176,10 @@
 		display: block;
 
 		@media all and (min-width: $bp-xl) {
-			background: $color-gray-73;
-			padding: .5rem 1rem 1rem;
+			// background: $color-gray-73;
+			padding: 0 1rem;
 			margin: 0;
-			position: absolute;
+			// position: absolute;
 			top: 100%;
 			z-index: 6;
 			min-width: 8rem;

@@ -2,12 +2,9 @@
 layout: default
 ---
 
-{% include page-header.html %}
+<div class="text u-spacing">
+    <h1 class="u-font--secondary--xl u-theme--color--darker">{{ page.title }} {% if page.status %}{% include badge.html %}{% endif %}</h1>
 
-<div class="l-linelength-container">
-
-	<div class="c-text-passage">
 		{{ content | markdownify }}
-	</div><!--end c-text-passage-->
 
-</div><!--l-linelength-container-->
+</div><!--text u-spacing-->
