@@ -2,9 +2,14 @@
 layout: default
 ---
 
-<div class="text u-spacing">
+<article class="l-grid-item--l--4-col l-grid-item--xl--4-col u-padding--zero--left u-padding--zero--right">
+  <div class="text u-spacing">
     <h1 class="u-font--secondary--xl u-theme--color--darker">{{ page.title }} {% if page.status %}{% include badge.html %}{% endif %}</h1>
+    <p class="o-highlight u-padding u-background-color--gray--light can-be--dark-dark">
+      {{ page.description }}
+    </p>
 
-		{{ content | markdownify }}
+    {{ content | markdownify }}
 
-</div><!--text u-spacing-->
+  </div><!--text u-spacing-->
+</article>

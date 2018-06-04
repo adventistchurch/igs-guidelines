@@ -381,5 +381,97 @@
     fill: #808080; }
 
 /*------------------------------------*\
+    #TABS
+\*------------------------------------*/
+/**
+ * 1) Unordered list of links where the each link targets different information
+ */
+/**
+ * Vertical tabs
+ * 1) Displays tabs on the right and the body on the left
+ */
+.c-tabs--vertical {
+  display: flex;
+  margin-bottom: 1rem; }
+
+/**
+ * Tabs list
+ */
+.c-tabs__list {
+  display: flex;
+  border-bottom: 1px solid #bbb;
+  /**
+   * Tabs list within vertical tabs
+   */ }
+  .c-tabs--vertical .c-tabs__list {
+    border: 1px solid #bbb;
+    display: block;
+    order: 1; }
+
+/**
+* Tabs list
+* 1) Overlap the tabs bottom border
+*/
+.c-tabs__link {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-bottom: -1px;
+  min-width: 5rem;
+  text-align: center;
+  /**
+   * Active tabs link
+   */
+  /**
+   * Tabs link within vertical tabs
+   */ }
+  .c-tabs__link.is-active {
+    border: 1px solid #bbb;
+    border-left: 3px solid #222;
+    border-bottom: 1px solid #fff; }
+  .c-tabs__link:hover:not(.is-active) {
+    background-color: #eee; }
+  .c-tabs--vertical .c-tabs__link {
+    border: 0;
+    border-bottom: 1px solid #808080;
+    /**
+     * Last tabs item link within vertical tabs
+     */
+    /**
+     * Active tabs link within vertical tabs
+     */ }
+    .c-tabs__item:last-child .c-tabs--vertical .c-tabs__link {
+      border-bottom: 0; }
+    .c-tabs--vertical .c-tabs__link.is-active {
+      background: #ddd; }
+
+/**
+ * Tab Body
+ */
+.c-tabs__body {
+  padding: 1rem 0;
+  border-top: 0;
+  /**
+   * Tabs body within vertical tabs
+   * 1) Take up the remaining space that the actual tabs do not take up
+   */ }
+  .c-tabs--vertical .c-tabs__body {
+    flex: 1;
+    /* 1 */
+    border: 1px solid #bbb;
+    border-right: 0; }
+
+/**
+ * Tab Panel
+ * 1) Display by default, and only hide if JS is available
+ */
+.c-tabs__panel {
+  display: none;
+  /**
+   * Active tabs panel
+   */ }
+  .c-tabs__panel.is-active {
+    display: block; }
+
+/*------------------------------------*\
    #UTILITIES
 \*------------------------------------*/
