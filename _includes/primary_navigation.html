@@ -1,0 +1,25 @@
+<nav class="c-primary-nav c-priority-nav" role="navigation">
+  <ul class="c-primary-nav__list c-priority-nav__list">
+    {% for menu_item in site.data.menu.primary_menu %}
+
+
+      <li class="c-primary-nav__list-item {% if menu_item.subnav %} has-subnav{% endif %}">
+        <a href="{{ menu_item.url | prepend: site.baseurl }}" class="c-primary-nav__link u-font--primary-nav u-color--gray--dark u-theme--link-hover--base u-theme--border-color--base {{menu_item.class}}">
+          {{ menu_item.title }}
+        </a>
+        {% if menu_item.subnav %}<span class="c-subnav__arrow o-arrow--down u-path-fill--gray"></span>{% endif %}
+        {% if menu_item.subnav %}
+          <ul class="c-primary-nav__subnav c-subnav">
+            {% for sub_item in menu_item.subnav %}
+
+              <li class="c-primary-nav__subnav__list-item c-subnav__list-item u-background-color--gray--light">
+                <a class="c-primary-nav__subnav__link c-subnav__link u-color--gray--dark u-theme--link-hover--base" href="{{  sub_item.url  | prepend: site.baseurl }}">{{ sub_item.title }}</a>
+              </li>
+            {% endfor %}
+          </ul> <!-- /.c-primary-nav__subnav -->
+        {% endif %}
+      </li>
+
+    {% endfor %}
+  </ul> <!-- /.c-primary-nav__list -->
+</nav> <!-- /.c-primary-nav -->

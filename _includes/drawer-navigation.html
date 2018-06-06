@@ -1,0 +1,41 @@
+<div class="c-drawer l-grid l-grid--7-col">
+  <div class="c-drawer__toggle js-toggle-parent u-theme--background-color-trans--darker">
+    <div class="u-icon o-icon__close">
+      <span></span>
+      <span></span>
+    </div>
+  </div> <!-- .c-drawer__toggle -->
+  <div class="l-grid-wrap--6-of-7 l-grid-item--s--6-col c-drawer__container u-spacing u-theme--background-color--darker">
+    <div class="c-drawer__nav">
+      <div class="c-drawer__nav-primary">
+        {% include primary_navigation.html %}
+      </div>
+      <div class="c-drawer__nav-secondary">
+        {% include secondary_navigation.html %}
+      </div>
+    </div> <!-- .c-drawer__nav -->
+    <div class="c-drawer__logo">
+      <span class="u-icon u-icon--l u-path-fill--white">
+          <svg class="" aria-hidden="true">
+              <use href="{{ "/icons.svg#adventist-icon" | prepend: site.baseurl }}"></use>
+            </svg>
+      </span>
+    </div> <!-- .c-drawer__logo -->
+    <div class="c-drawer__about">
+      <div class="c-drawer__about-left u-spacing">
+        <p>{{ site.footer_desc }}</p>
+        <p>{{ site.global_desc }}</p>
+      </div>
+      <div class="c-drawer__about-right u-spacing--half">
+        <h3 class="u-font--secondary--s u-text-transform--upper"><strong>Learn More:</strong></h3>
+        <p class="u-spacing--half">
+
+          {% for site_item in site.sites %}
+            <a href="{{ site_item.url | prepend: site.baseurl }}" target="_blank" class="u-link--white">{{ site_item.title }}</a>
+          {% endfor %}
+
+        </p>
+      </div>
+    </div> <!-- .c-drawer__about -->
+  </div> <!-- .c-drawer__container -->
+</div> <!-- .c-drawer-->

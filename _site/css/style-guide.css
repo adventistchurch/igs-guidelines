@@ -17,11 +17,9 @@
  * 1) Iffframe creates a resizable component
  */
 .iffframe {
-  padding: 1rem 0.7rem 1rem 0;
   width: 100%;
   position: relative;
-  border: 1px solid #f5f5f5;
-  border-left: none;
+  border: 4px solid #f5f5f5;
   overflow: hidden;
   height: auto;
   background-color: #ffffff;
@@ -80,8 +78,7 @@ code[class*="language-"], pre[class*="language-"] {
   tab-size: 2; }
 
 .pattern-code {
-  position: relative;
-  margin-top: 2rem; }
+  position: relative; }
 
 /**
  * Applied to pre element
@@ -96,7 +93,8 @@ code[class*="language-"], pre[class*="language-"] {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2; }
+  z-index: 2;
+  margin: .5em; }
 
 /* 3 */
 pre[class*="language-"] {
@@ -158,3 +156,6 @@ code[class*="language-"], pre[class*="language-"] {
   display: none; }
   .c-tabs-list__item.is-active {
     display: block; }
+
+.c-badge {
+  font-size: small; }

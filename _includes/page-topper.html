@@ -1,0 +1,35 @@
+{% if page.images %}
+<div class="c-media-block c-block c-block__inset c-media-block__inset">
+
+{% else %}
+<div class="c-media-block c-block c-block__inline c-media-block__inine l-grid--7-col l-grid-wrap l-grid-wrap--6-of-7 u-theme--background-color--dark can-be--dark-dark u-padding--top u-padding--bottom">
+{% endif %}
+  {% if page.images %}
+  <div class="c-media-block__image c-block__image ">
+    <div class="c-block__image-wrap ">
+      <picture class="picture">
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="//picsum.photos/1440/250" media="(min-width: 1000px)">
+        <source srcset="//picsum.photos/1000/250" media="(min-width: 800px)">
+        <source srcset="//picsum.photos/800/250" media="(min-width: 500px)">
+        <!--[if IE 9]></video><![endif]-->
+        <img itemprop="image" srcset="//picsum.photos/500/275" alt="Alt Text">
+      </picture>
+    </div>
+  </div> <!-- c-media-block__image -->
+  {% endif %}
+  <div class="c-media-block__content c-block__content u-spacing u-shift--left--1-col--at-large l-grid-item--m--6-col l-grid-item--l--4-col l-grid-item--xl--3-col u-border--left u-theme--border-color--light--left u-theme--color--lighter">
+    <div class="u-spacing c-block__group c-media-block__group ">
+      <div class="u-spacing u-width--100p">
+        <h2 class="c-media-block__title c-block__title u-color--white u-font--primary--xxl u-space--zero">
+          {% if page.section %}
+            {{ page.section }}
+          {% else %}
+            {{ page.title }}
+          {% endif %}
+        </h2>
+      </div>
+
+    </div>
+  </div> <!-- c-media-block__content -->
+</div>
