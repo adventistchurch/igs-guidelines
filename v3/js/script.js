@@ -44,23 +44,6 @@
     });
   }
 
-  // Sabbath Logo Icon
-  var headerHeight = $('.c-header').outerHeight();
-  $(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > headerHeight) {
-      $('.js-show-on-scroll').removeClass('is-hidden').addClass('is-visible');
-    } else {
-      $('.js-show-on-scroll').removeClass('is-visible').addClass('is-hidden');
-    }
-  });
-
-  $(window).scroll(function(){
-     var percent = $(document).scrollTop() / ($(document).height() - ($(document).height() - $(window).height() - ($(window).height() / 2)));
-     $('.l-sabbath__logo-light').css('opacity', 1 - percent);
-     $('.l-sabbath__overlay').css('opacity', 1 - percent);
-  });
-
   // Check window width
   var getWidth = function() {
     var width;
@@ -82,6 +65,28 @@
   }
   window.onresize = function() {
     getWidth();
+  }
+
+  // Sabbath Logo Icon
+  var headerHeight = $('.c-header').outerHeight();
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > headerHeight) {
+      $('.js-show-on-scroll').removeClass('is-hidden').addClass('is-visible');
+    } else {
+      $('.js-show-on-scroll').removeClass('is-visible').addClass('is-hidden');
+    }
+  });
+
+  $(window).scroll(function(){
+     var percent = $(document).scrollTop() / ($(document).height() - ($(document).height() - $(window).height() - ($(window).height() / 2)));
+     $('.l-sabbath__logo-light').css('opacity', 1 - percent);
+     $('.l-sabbath__overlay').css('opacity', 1 - percent);
+  });
+
+  // Hide sabbath column on small screens
+  if (isMobile() && $('.body').hasClass('hide-sabbath--small')) {
+    $('.body').addClass('hide-sabbath');
   }
 
   // SITE SPECIFIC JS ------------------------------//
@@ -121,9 +126,9 @@
   /**
    * Fixto
    */
-  $('.js-sticky').fixTo('js-sticky-parent', {
+  $('.js-sticky').fixTo('.js-sticky-parent', {
     className: 'sticky-is-active',
-    useNativeSticky: true,
+    useNativeSticky: false,
     zIndex: 9999
   });
 
@@ -208,6 +213,7 @@
 
   // Remove active classes on click of drawer
   $('.c-drawer').on('click', function() {
+    $('.body').removeClass('menu-is-active');
     $('.c-primary-nav__list, .c-primary-nav__list-item, .c-drawer__nav-primary, .c-subnav__arrow').removeClass('this-is-active');
   });
 
@@ -215,6 +221,7 @@
   $('.js-toggle-menu, .c-priority-nav__toggle').on('click', function(e) {
     e.stopPropagation();
     $('.c-drawer').toggleClass('this-is-active');
+    $('.body').addClass('menu-is-active');
   });
 
   // Make search input active with toggle is clicked
@@ -241,8 +248,6 @@
       adaptiveHeight: true
     });
   }
-
-
 
   // Slick carousel (multiple items)
   if ($('.js-carousel__multi-item').length) {
