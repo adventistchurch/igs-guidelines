@@ -17,7 +17,7 @@ If your division has not yet provided a color system, the recommended base palet
 
 Within this new, variable color system, the symbol can be adapted to match or compliment other layout elements, provided the symbol always remain a single, solid color. It is recommended that the Sabbath column be used as an area for tasteful color usage. **If using the symbol over a color in the Sabbath column it should appear in white.** 
 
-## Primary Colors ##
+### Primary Colors ###
 <h2 class="u-padding--left">Bright Colors</h2>
 <div class="u-space u-padding--double--bottom">
   <ul class="colorset primary-colors">
@@ -415,7 +415,7 @@ Within this new, variable color system, the symbol can be adapted to match or co
   </ul>
 </div>
 
-## Accent Colors ##
+### Accent Colors ###
 
 
 For inspiration, check out [Material Design's color styles page](https://material.io/guidelines/style/color.html).

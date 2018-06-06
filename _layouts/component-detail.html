@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<article class="l-grid-item l-grid-item--l--4-col l-grid-item--xl--4-col u-spacing">
+
 {% include breadcrumbs.html %}
 
 {% include page-header.html %}
@@ -26,9 +28,9 @@ layout: default
 			<div class="c-tabs__panel js-tabs-panel" id="tab-{{ variation.title | downcase | replace: ' ', '-' }}">
 
 				<section class="c-section">
-					<header class="c-section__header">
+          <header class="c-section__header u-spacing--quarter u-padding--half">
 						{% if variation.title %}<h5 class="c-section__title">{{ variation.title }} {% if variation.styleModifier %}<code class="u-font-size-med">{{ variation.styleModifier }}</code>{% endif %}</h5>{% endif %}
-						{% if variation.description %}<div>{{ variation.description | markdownify }} </div>{% endif %}
+						{% if variation.description %} {{ variation.description | markdownify }} {% endif %}
 					</header>
 
 					{% if variation.codepenUser and variation.codepenID %}
@@ -92,7 +94,6 @@ layout: default
 			<div class="c-tabs test-tabs  js-tabs">
 
 				<ul class="c-tabs__list">
-
 					<li class="c-tabs__item">
 						<a href="#html-{{ forloop.index }}" class="c-tabs__link js-tab">HTML</a>
 					</li><!-- end c-tabs__item -->
@@ -104,41 +105,34 @@ layout: default
 				</ul><!-- end c-tabs__list -->
 
 				<div class="c-tabs__body ">
-
 					<div class="c-tabs__panel js-tabs-panel" id="html-{{ forloop.index }}">
 
 						{% capture markupOnlyPath %}/patterns/{{ componentString }}/{{ componentString }}.markup-only.html{% endcapture %}
 
 						<div class="pattern-code">
 							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
-							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
+							<pre class="highlight pattern-code-block line-numbers"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
 						</div>
 
-
 					</div><!--end c-tabs__panel-->
-
 					<div class="c-tabs__panel js-tabs-panel" id="twig-{{ forloop.index }}">
 
 						{% capture markupOnlyPath %}/patterns/{{ componentString }}/{{ componentString }}.twig{% endcapture %}
-						
+
 						<div class="pattern-code">
 							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
-							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
+							<pre class="highlight pattern-code-block line-numbers"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
 						</div>
 
 					</div><!--end c-tabs__panel-->
-
 				</div><!-- end c-tabs__body-->
-
 			</div><!-- end c-tabs -->
 			{% endif %}
 
 			</li><!-- end c-tabs-list__item -->
-
 		{% endfor %}
 
 	</ul><!-- end c-tabs-list -->
-
 </section><!-- end c-section -->
 
 <section class="c-section">
@@ -146,24 +140,16 @@ layout: default
 	{% if page.usage %}
 	<div class="c-section-header ">
 
-		<h1 class="c-section-header__title">Usage</h1>
+    <h1 class="c-section-header__title u-font--secondary--l u-theme--color--darker">Usage</h1>
 
 	</div><!-- end c-section-header -->
 
-	<div class="c-text-passage l-linelength-container">
+	<div class="c-text-passage u-spacing">
 		{% include definition-list.html %}
 
 	</div><!-- end c-text-passage -->
 	{% endif %}
 
-	<div class="c-table-container">
-
-		<table class="c-table ">
-
-
-		{% include definition-list.html %}
-
-	</div><!-- end c-text-passage -->
 
 	<div class="c-table-container">
 
@@ -185,7 +171,7 @@ layout: default
 
 					<td class="c-table__cell ">
 						<code class="nowrap">
-							{{ class.className }}	
+							{{ class.className }}
 						</code>
 					</td>
 
@@ -206,27 +192,19 @@ layout: default
 
 </section><!-- end c-section -->
 
-<section class="c-section">
+<section class="c-section c-footer__copyright u-background-color--gray--light u-padding--half">
 
-	<div class="c-section-header ">
+  <h2 class="u-font--secondary--m u-theme--color--darker">Fine print</h2>
 
-		<h1 class="c-section-header__title">Fine print</h1>
-
-	</div><!-- end c-section-header -->
-
-	<div class="c-text-passage l-linelength-container">
 			<ul>
-					<li>Last updated: {{ page.last_modified_at | date: '%A %d-%B-%Y at %H:%M:%S' }}</li>
-				</ul>
-		{% for print in page.fine-print %}
-        <ul>
-            <li>Version: {{ print.version }}</li>
-            <li>Last Updated: {{ print.update }}</li>
-            <li>Owner: <a href="#">{{ print.owner }}</a></li>
-        </ul>
-		{% endfor %}
-	</div><!-- end c-text-passage -->
-
-	<a href="#" class="c-btn">Discuss this component</a><!-- end c-btn -->
+        <li>Last updated: {{ page.last_modified_at | date: '%A %d-%B-%Y at %H:%M:%S' }}</li>
+        {% for print in page.fine-print %}
+          <li>Version: {{ print.version }}</li>
+          <li>Last Updated: {{ print.update }}</li>
+          <li>Owner: <a href="#">{{ print.owner }}</a></li>
+        {% endfor %}
+      </ul>
 
 </section><!-- end c-section -->
+
+</article>

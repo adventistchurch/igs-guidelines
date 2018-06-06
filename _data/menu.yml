@@ -1,0 +1,53 @@
+primary_menu:
+  -
+    title: Global Elements
+    url: /global-elements
+    subitems:
+      -
+        title: The Creation Grid
+        url: /creation-grid
+      -
+        title: The Church Symbol
+        url: /church-symbol
+  -
+    title: How To
+    url: /how-to-use-these-guidelines/
+
+secondary_menu:
+  -
+    title: Slack
+    url: /slack
+    class: slack
+  -
+    title: Contact Us
+    url: /contact
+    class: contact
+
+footer_menu:
+  -
+    title: About
+    url: /about
+  -
+    title: Roadmap
+    url: /roadmap
+  -
+    title: Release History
+    url: /release-history
+  -
+    title: Contribute
+    url: /contribute
+
+
+social_menu:
+  -
+    title: Facebook
+    url: https://www.facebook.com/theadventistchurch
+    icon: icon-facebook
+  -
+    title: Twitter
+    url: https://twitter.com/adventistchurch
+    icon: icon-twitter
+  -
+    title: Email
+    url: mailto:identity@gc.adventist.org
+

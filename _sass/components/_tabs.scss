@@ -48,16 +48,21 @@
 	 * Active tabs link
 	 */
 	&.is-active {
-		border: 1px solid $color-gray-27;
-		border-bottom: 1px solid $color-white;
-	}
+    border: 1px solid $color-gray-27;
+    border-left: 3px solid $color-gray-80;
+    border-bottom: 1px solid $color-white;
+  }
+
+  &:hover:not(.is-active) {
+    background-color: $color-gray-07;
+  }
 
 	/**
 	 * Tabs link within vertical tabs
 	 */
 	.c-tabs--vertical & {
 		border: 0;
-		border-bottom: 1px solid $color-gray-27;
+		border-bottom: 1px solid $color-gray-50;
 
 		/**
 		 * Last tabs item link within vertical tabs
@@ -101,7 +106,7 @@
  */
 .c-tabs__panel {
 	display: none;
-	padding: 1rem;
+	// padding: 1rem;
 
 	/**
 	 * Active tabs panel
