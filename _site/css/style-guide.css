@@ -158,4 +158,9 @@ code[class*="language-"], pre[class*="language-"] {
     display: block; }
 
 .c-badge {
-  font-size: small; }
+  font-size: small;
+  vertical-align: super; }
+  .c-badge--positive {
+    background-color: #00af53; }
+  .c-badge--negative {
+    background-color: #d82424; }

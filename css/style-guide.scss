@@ -254,11 +254,14 @@ code[class*="language-"], pre[class*="language-"] {
 .c-badge {
 
   font-size: small;
+  vertical-align: super;
+
 
   &--positive{
-
+    background-color: $color-app-green;
   }
   &--negative{
+    background-color: $color-app-red;
 
   }
 }
