@@ -1,0 +1,251 @@
+colors_base:
+  -
+    name: color-treefrog-base
+    type: primary
+    shade: bright
+    friendlyName: Tree Frog
+    cssClassName: u-background-color--treefrog
+
+    value_hex: '#2b8500'
+    value_rgb: rgb(43, 133,0)
+    value_cmyk: 78, 0 ,100, 2
+    value_pantone: 362C
+    value_sass: $c-theme-treefrog
+
+  -
+    name: color-ming-base
+    type: primary
+    shade: bright
+    friendlyName: Ming
+    cssClassName: u-background-color--ming
+
+    value_hex: '#007f98'
+    value_rgb: rgb(0, 127, 152)
+    value_cmyk: 96, 9, 32, 29
+    value_pantone: 7474C
+    value_sass: $c-theme-ming
+
+  -
+    name: color-bluejay-base
+    type: primary
+    shade: bright
+    friendlyName: Bluejay
+    cssClassName: u-background-color--bluejay
+
+    value_hex: '#2e6de7'
+    value_rgb: rgb(46, 109, 231)
+    value_cmyk: 90, 48, 0, 0
+    value_pantone: 285C
+    value_sass: $c-theme-bluejay
+  -
+    name: color-iris-base
+    type: primary
+    shade: bright
+    friendlyName: Iris
+    cssClassName: u-background-color--iris
+
+    values:
+    value_hex: '#9013fe'
+    value_rgb: rgb(144, 19, 254)
+    value_cmyk: 70, 76, 0, 0
+    value_pantone: 2665C
+    value_sass: $c-theme-iris
+
+  -
+    name: color-lily-base
+    type: primary
+    shade: bright
+    friendlyName: Lily
+    cssClassName: u-background-color--lily
+
+    values:
+    value_hex: '#d41583'
+    value_rgb: rgb(212, 21, 131)
+    value_cmyk: 1, 92, 4, 0
+    value_pantone: 219C
+    value_sass: $c-theme-lily
+
+  -
+    name: color-scarlett-base
+    type: primary
+    shade: bright
+    friendlyName: Scarlett
+    cssClassName: u-background-color--scarlett
+
+    values:
+    value_hex: '#d0021b'
+    value_rgb: rgb(208, 2, 27)
+    value_cmyk: 0, 100, 72, 0
+    value_pantone: 199C
+    value_sass: $c-theme-scarlett
+  -
+    name: color-campfire-base
+    type: primary
+    shade: bright
+    friendlyName: Campfire
+    cssClassName: u-background-color--campfire
+
+    values:
+    value_hex: '#cd4900'
+    value_rgb: rgb(201, 73, 2)
+    value_cmyk: 0, 71, 100, 3
+    value_pantone: 1595C
+    value_sass: $c-theme-campfire
+
+  -
+    name: color-winter-base
+    type: primary
+    shade: bright
+    friendlyName: Winter
+    cssClassName: u-background-color--winter
+
+    values:
+    value_hex: '#717171'
+    value_rgb: rgb(113, 113, 113)
+    value_cmyk: 30, 22, 17, 57
+    value_pantone: Cool Gray 9C
+    value_sass: $c-theme-winter
+
+
+  -
+    name: color-forest-base
+    type: primary
+    shade: muted
+    friendlyName: Forest
+    cssClassName: u-background-color--forest
+
+    value_hex: '#355724'
+    value_rgb: rgb(53, 87, 36)
+    value_cmyk: 80, 21, 79, 64
+    value_pantone: 357C
+    value_sass: $c-theme-forest
+
+  -
+    name: color-cave-base
+    type: primary
+    shade: muted
+    friendlyName: Cave
+    cssClassName: u-background-color--cave
+
+    value_hex: '#255760'
+    value_rgb: rgb(37, 87, 96)
+    value_cmyk: 89, 22, 34, 65
+    value_pantone: 7476C
+    value_sass: $c-theme-cave
+
+  -
+    name: color-denim-base
+    type: primary
+    shade: muted
+    friendlyName: Denim
+    cssClassName: u-background-color--denim
+
+    value_hex: '#2f557f'
+    value_rgb: rgb(47,85,127)
+    value_cmyk: 96, 54, 5, 27
+    value_pantone: 647C
+    value_sass: $c-theme-emperor
+
+  -
+    name: color-emperor-base
+    type: primary
+    shade: muted
+    friendlyName: Emperor
+    cssClassName: u-background-color--emperor
+
+    value_hex: '#4b207f'
+    value_rgb: rgb(75,32,127)
+    value_cmyk: 82, 100, 0, 12
+    value_pantone: 268C
+    value_sass: $c-theme-emperor
+
+  -
+    name: color-grapevine-base
+    type: primary
+    shade: muted
+    friendlyName: Grapevine
+    cssClassName: u-background-color--grapevine
+
+    value_hex: '#4b207f'
+    value_rgb: rgb(113, 37, 81)
+    value_cmyk: 13, 96, 26, 52
+    value_pantone: 216C
+    value_sass: $c-theme-grapevine
+
+  -
+    name: color-velvet-base
+    type: primary
+    shade: muted
+    friendlyName: Velvet
+    cssClassName: u-background-color--velvet
+
+    value_hex: '#782832'
+    value_rgb: rgb(120, 40, 50)
+    value_cmyk: 20, 97, 40, 58
+    value_pantone: 209C
+    value_sass: $c-theme-velvet
+
+  -
+    name: color-earth-base
+    type: primary
+    shade: muted
+    friendlyName: Earth
+    cssClassName: u-background-color--earth
+
+    value_hex: '#5e3929'
+    value_rgb: rgb(94,57,41)
+    value_cmyk: 30, 71, 75, 81
+    value_pantone: 476C
+    value_sass: $c-theme-earth
+
+  -
+    name: color-night-base
+    type: primary
+    shade: muted
+    friendlyName: Night
+    cssClassName: u-background-color--night
+
+    value_hex: '#4A4A4A'
+    value_rgb: rgb(74, 74, 74)
+    value_cmyk: 44, 34, 22, 77
+    value_pantone: Cool Gray 10C
+    value_sass: $c-theme-night
+
+
+
+
+
+
+
+colors_extended:
+  -
+    name: color-treefrog-light
+    type: extended
+    parent: color-treefrog-base
+    friendlyName: Tree Frog - Light
+    values:
+    - hex: #7cd500
+    - rgb: rgb(124,213,0)
+  -
+    name: color-treefrog-lighter
+    type: extended
+    parent: color-treefrog-base
+    friendlyName: Tree Frog - Lighter
+    values:
+    - hex: #9fe180
+    - rgb: rgb(159,225,128)
+
+
+
+  -
+    name: color-forest-base
+    type: primary
+    shade: muted
+    friendlyName: Forest
+    values:
+    - hex: #355724
+    - rgb: rgb(53, 87, 36)
+    - cmyk: 80, 21, 79, 64
+    - pantone: Pantone 357C
+    - sass: $c-theme-forest
+    - css: .u-background-color--forest

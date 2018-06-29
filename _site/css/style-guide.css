@@ -164,3 +164,58 @@ code[class*="language-"], pre[class*="language-"] {
     background-color: #00af53; }
   .c-badge--negative {
     background-color: #d82424; }
+
+/**
+ *  * Color Containers
+ */
+.c-color-swatch {
+  width: 100%;
+  height: 100px; }
+
+.colorset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.colorset--color {
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px gray solid;
+  padding: rem(5s);
+  margin: 0 0 5px 0;
+  width: calc(25% - 20px); }
+
+.sg-colors {
+  overflow: hidden; }
+  .sg-colors li {
+    overflow: hidden;
+    border: 1px solid darkgray;
+    padding: 0.3em;
+    margin: 0 0.2em 0.2em 0; }
+    @media all and (min-width: 400px) {
+      .sg-colors li {
+        float: left;
+        width: 5em; } }
+
+.sg-swatch {
+  display: block;
+  height: 100px;
+  width: 100%; }
+
+.sg-swatch--mini {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin: 5px 0;
+  justify-content: stretch; }
+
+.sg-swatch--mini-item {
+  width: 100%;
+  margin-right: rem(5); }
+  .sg-swatch--mini-item:last-child {
+    margin-right: 0; }
+
+.u-break-gutter {
+  margin-left: -1.25em;
+  margin-right: -1.25em; }

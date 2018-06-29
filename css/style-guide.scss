@@ -265,3 +265,102 @@ code[class*="language-"], pre[class*="language-"] {
 
   }
 }
+
+
+/**
+ *  * Color Containers
+ */
+
+.c-color-swatch{
+  width: 100%;
+  height: 100px;
+}
+
+
+
+
+
+
+
+ // Old starts here:
+
+ .colorset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  // @include media('>medium') {
+  //   flex-direction: row;
+  //   margin-left: -$space/2;
+  //   margin-right: -$space/2;
+  // }
+}
+
+.colorset--color {
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px gray solid;
+  padding: rem(5s);
+  margin: 0 0 5px 0;
+
+  // @include media('>medium') {
+  //   width: calc(33.333% - 20px);
+  //   margin: rem(10);
+  // }
+
+  // @include media('>large') {
+    width: calc(25% - 20px);
+  // }
+
+  // @include media('>xlarge') {
+  //   width: calc(20% - 20px);
+  // }
+}
+
+
+// Style Guide color swatches
+.sg-colors {
+  overflow: hidden;
+  li {
+    overflow: hidden;
+    border: 1px solid darkgray;
+    padding: 0.3em;
+    margin: 0 0.2em 0.2em 0;
+    @media all and (min-width: 400px) {
+      float: left;
+      width: 5em;
+    }
+  }
+}
+
+.sg-swatch {
+  display: block;
+  height: 100px;
+  width: 100%;
+}
+
+.sg-swatch--mini {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin: 5px 0;
+  justify-content: stretch;
+}
+
+.sg-swatch--mini-item {
+  width: 100%;
+  margin-right: rem(5);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+// Trumps
+.u-break-gutter{
+  margin-left: -1.25em;
+  margin-right: -1.25em;
+
+}
