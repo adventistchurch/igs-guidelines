@@ -211,8 +211,59 @@ colors_base:
     value_pantone: Cool Gray 10C
     value_sass: $c-theme-night
 
+  -
+    name: color--black
+    type: secondary
+    shade: neutral
+    friendlyName: Black
+    cssClassName: u-background-color--black
 
+    value_hex: '#000000'
 
+  -
+    name: color--gray--darker
+    type: secondary
+    shade: neutral
+    friendlyName: Gray -- Darker
+    cssClassName: u-background-color--gray--darker
+
+    value_hex: '#222222'
+
+  -
+    name: color--gray--dark
+    type: secondary
+    shade: neutral
+    friendlyName: Gray -- Dark
+    cssClassName: u-background-color--gray--dark
+
+    value_hex: '#4a4a4a'
+
+  -
+    name: color--gray
+    type: secondary
+    shade: neutral
+    friendlyName: Gray
+    cssClassName: u-background-color--gray
+
+    value_hex: '#717171'
+
+  -
+    name: color--gray--light
+    type: secondary
+    shade: neutral
+    friendlyName: Gray -- Light
+    cssClassName: u-background-color--gray--light
+
+    value_hex: '#f5f5f5'
+
+  -
+    name: color--white
+    type: secondary
+    shade: neutral
+    friendlyName: White
+    cssClassName: u-background-color--white
+
+    value_hex: '#ffffff'
 
 
 
@@ -249,3 +300,4 @@ colors_extended:
     - pantone: Pantone 357C
     - sass: $c-theme-forest
     - css: .u-background-color--forest
+

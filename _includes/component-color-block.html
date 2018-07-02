@@ -2,7 +2,7 @@
 <div class="c-media-block c-block c-block__stacked c-media-block__stacked l-grid-wrap l-grid--7-col l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col">
   <div class="c-media-block__image c-block__image l-grid-item--3-col l-grid-item--m--2-col l-grid-item--xl--1-col u-padding--zero--sides u-space--right">
     <div class="c-block__image-wrap ">
-      <div class="c-color-swatch {{ color.cssClassName }} ">
+      <div class="c-color-swatch u-border {{ color.cssClassName }} ">
       </div>
     </div>
   </div>
@@ -16,22 +16,31 @@
       </div>
       <div class="c-media-block__meta u-font--secondary--s">
         <ul>
+          {% if color.value_hex %}
           <li>
             <span class="u-theme--color--base">HEX</span>: {{ color.value_hex }}
           </li>
+          {% endif %}
+          {% if color.value_rgb %}
           <li>
             <span class="u-theme--color--base">RGB</span>: {{ color.value_rgb }}
           </li>
+          {% endif %}
+          {% if color.value_cmyk %}
           <li>
             <span class="u-theme--color--base">CMYK</span>: {{ color.value_cmyk }}
           </li>
+          {% endif %}
+          {% if color.value_pantone %}
           <li>
             <span class="u-theme--color--base">Pantone</span>: {{ color.value_pantone }}
           </li>
+          {% endif %}
+          {% if color.value_sass %}
           <li>
             <span class="u-theme--color--base">SASS</span>: {{ color.value_sass }}
           </li>
-
+          {% endif %}
         </ul>
       </div>
     </div>

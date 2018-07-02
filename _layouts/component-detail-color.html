@@ -35,6 +35,18 @@ layout: default
         {% endfor %}
       </div>
     </section>
+
+    <section class="l-section__block-row l-section__block-row--6-col l-grid u-break-gutter u-space--double--bottom">
+      <h2 id="muted" class="u-padding--left u-font--secondary--l">Neutrals</h2>
+
+    <div class="l-grid-item u-padding--zero--sides u-flex">
+      {% for color in site.data.color.colors_base %}
+        {% if color.shade == "neutral" %}
+          {% include component-color-block.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
   </section>
   <!-- end c-section -->
 
