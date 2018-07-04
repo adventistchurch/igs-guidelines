@@ -368,3 +368,12 @@ code[class*="language-"], pre[class*="language-"] {
 .o-table-slim td {
   padding: .25rem;
 }
+
+code {
+  // background-color: #717171; // $c-gray
+  background-color:  #f5f5f5; // $c-gray--light:
+  ;
+  padding: .25rem; //
+  font-family: Menlo,Monaco,"Courier New","Courier",monospace; // $ff-font--monospace:
+
+}

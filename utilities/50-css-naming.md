@@ -10,16 +10,16 @@ description: Various classes that don't fit other categories.
 
 
 ---
+https://sparkdesignsystem.com/docs/class-naming-convention
 
+CSS Classes use the following naming prefixes:
 
-CSS Classes use the following naming prefixes: 
-
-- `u-`: Utilities
-  - `u-font--`: 
+- `u-`: <strong>Utilities</strong> - Very specific classes that typically serve a single purpose.
+  - `u-font--`:
   - `u-text-transform--`:
   - `u-theme--`:
 
-- `c-`: Color
-- `o-`: Object
-- `l-`: Layout
+- `c-`: <strong>Color</strong> -
+- `o-`: <strong>Object</strong> - These are cosmetic-free design patterns that are the skeleton of an element.
+- `l-`: <strong>Layout</strong> -
 - ``:
