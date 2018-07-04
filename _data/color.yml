@@ -219,7 +219,7 @@ colors_base:
     cssClassName: u-background-color--black
 
     value_hex: '#000000'
-
+    value_rgb: rgb(0, 0, 0)
   -
     name: color--gray--darker
     type: secondary
@@ -228,7 +228,7 @@ colors_base:
     cssClassName: u-background-color--gray--darker
 
     value_hex: '#222222'
-
+    value_rgb: rgb(34, 34, 34)
   -
     name: color--gray--dark
     type: secondary
@@ -237,7 +237,7 @@ colors_base:
     cssClassName: u-background-color--gray--dark
 
     value_hex: '#4a4a4a'
-
+    value_rgb: rgb(74, 74, 74)
   -
     name: color--gray
     type: secondary
@@ -246,7 +246,7 @@ colors_base:
     cssClassName: u-background-color--gray
 
     value_hex: '#717171'
-
+    value_rgb: rgb(113, 113, 113)
   -
     name: color--gray--light
     type: secondary
@@ -255,6 +255,7 @@ colors_base:
     cssClassName: u-background-color--gray--light
 
     value_hex: '#f5f5f5'
+    value_rgb: rgb(245, 245, 245)
 
   -
     name: color--white
@@ -264,6 +265,7 @@ colors_base:
     cssClassName: u-background-color--white
 
     value_hex: '#ffffff'
+    value_rgb: rgb(255, 255, 255)
 
 
 
@@ -560,4 +562,290 @@ colors_extended:
     value_hex: '#F9F9F9'
     value_rgb: rgb(249, 249, 249)
 
+  -
+    name: color-forest-darker
+    type: extended
+    parent: color-forest-base
+    friendlyName: Forest - Darker
+    value_hex: '#101a00'
+    value_rgb: rgb(16, 26, 0)
+  -
+    name: color-forest-dark
+    type: extended
+    parent: color-forest-base
+    friendlyName: Forest - Dark
+    value_hex: '#2b8500'
+    value_rgb: rgb(43, 133, 0)
+  -
+    name: color-forest-base
+    type: extended
+    parent: color-forest-base
+    friendlyName: Forest - Base
+    value_hex: '#355724'
+    value_rgb: rgb(53, 87, 36)
+  -
+    name: color-forest-light
+    type: extended
+    parent: color-forest-base
+    friendlyName: Forest - Light
+    value_hex: '#7cd500'
+    value_rgb: rgb(124, 213, 0)
+  -
+    name: color-forest-lighter
+    type: extended
+    parent: color-forest-base
+    friendlyName: Forest - Lighter
+    value_hex: '#9fe180'
+    value_rgb: rgb(159, 225, 128)
+
+  -
+    name: color-cave-darker
+    type: extended
+    parent: color-cave-base
+    friendlyName: Cave - Darker
+    value_hex: '#01161e'
+    value_rgb: rgb(1, 22, 30)
+  -
+    name: color-cave-dark
+    type: extended
+    parent: color-cave-base
+    friendlyName: Cave - Dark
+    value_hex: '#007f98'
+    value_rgb: rgb(0, 127, 152)
+  -
+    name: color-cave-base
+    type: extended
+    parent: color-cave-base
+    friendlyName: Cave - Base
+    value_hex: '#255760'
+    value_rgb: rgb(37, 87, 96)
+  -
+    name: color-cave-light
+    type: extended
+    parent: color-cave-base
+    friendlyName: Cave - Light
+    value_hex: '#00d5fe'
+    value_rgb: rgb(0, 213, 254)
+  -
+    name: color-cave-lighter
+    type: extended
+    parent: color-cave-base
+    friendlyName: Cave - Lighter
+    value_hex: '#9ae1f0'
+    value_rgb: rgb(154, 225, 240)
+
+  -
+    name: color-denim-darker
+    type: extended
+    parent: color-denim-base
+    friendlyName: Denim - Darker
+    value_hex: '#04132b'
+    value_rgb: rgb(4, 19, 43)
+  -
+    name: color-denim-dark
+    type: extended
+    parent: color-denim-base
+    friendlyName: Denim - Dark
+    value_hex: '#04132b'
+    value_rgb: rgb(4, 19, 43)
+  -
+    name: color-denim-base
+    type: extended
+    parent: color-denim-base
+    friendlyName: Denim - Base
+    value_hex: '#2f557f'
+    value_rgb: rgb(47, 85, 127)
+  -
+    name: color-denim-light
+    type: extended
+    parent: color-denim-base
+    friendlyName: Denim - Light
+    value_hex: '#2e6de7'
+    value_rgb: rgb(46, 109, 231)
+  -
+    name: color-denim-lighter
+    type: extended
+    parent: color-denim-base
+    friendlyName: Denim - Lighter
+    value_hex: '#84adfc'
+    value_rgb: rgb(132, 173, 252)
+
+  -
+    name: color-emperor-darker
+    type: extended
+    parent: color-emperor-base
+    friendlyName: Emperor - Darker
+    value_hex: '#240431'
+    value_rgb: rgb(36, 4, 49)
+  -
+    name: color-emperor-dark
+    type: extended
+    parent: color-emperor-base
+    friendlyName: Emperor - Dark
+    value_hex: '#9013fe'
+    value_rgb: rgb(144, 19, 254)
+  -
+    name: color-emperor-base
+    type: extended
+    parent: color-emperor-base
+    friendlyName: Emperor - Base
+    value_hex: '#4b207f'
+    value_rgb: rgb(75, 32, 127)
+  -
+    name: color-emperor-light
+    type: extended
+    parent: color-emperor-base
+    friendlyName: Emperor - Light
+    value_hex: '#b971f7'
+    value_rgb: rgb(185, 113, 247)
+  -
+    name: color-emperor-lighter
+    type: extended
+    parent: color-emperor-base
+    friendlyName: Emperor - Lighter
+    value_hex: '#b971f7'
+    value_rgb: rgb(185, 113, 247)
+  -
+    name: color-grapevine-darker
+    type: extended
+    parent: color-grapevine-base
+    friendlyName: Grapevine - Darker
+    value_hex: '#2a0d24'
+    value_rgb: rgb(42, 13, 36)
+  -
+    name: color-grapevine-dark
+    type: extended
+    parent: color-grapevine-base
+    friendlyName: Grapevine - Dark
+    value_hex: '#d41583'
+    value_rgb: rgb(212, 21, 131)
+  -
+    name: color-grapevine-base
+    type: extended
+    parent: color-grapevine-base
+    friendlyName: Grapevine - Base
+    value_hex: '#712551'
+    value_rgb: rgb(113, 37, 81)
+  -
+    name: color-grapevine-light
+    type: extended
+    parent: color-grapevine-base
+    friendlyName: Grapevine - Light
+    value_hex: '#ff61bc'
+    value_rgb: rgb(255, 97, 188)
+  -
+    name: color-grapevine-lighter
+    type: extended
+    parent: color-grapevine-base
+    friendlyName: Grapevine - Lighter
+    value_hex: '#ff61bc'
+    value_rgb: rgb(255, 97, 188)
+
+  -
+    name: color-velvet-darker
+    type: extended
+    parent: color-velvet-base
+    friendlyName: Velvet - Darker
+    value_hex: '#2d0505'
+    value_rgb: rgb(45, 5, 5)
+  -
+    name: color-velvet-dark
+    type: extended
+    parent: color-velvet-base
+    friendlyName: Velvet - Dark
+    value_hex: '#d0021b'
+    value_rgb: rgb(208, 2, 27)
+  -
+    name: color-velvet-base
+    type: extended
+    parent: color-velvet-base
+    friendlyName: Velvet - Base
+    value_hex: '#782832'
+    value_rgb: rgb(120, 40, 50)
+  -
+    name: color-velvet-light
+    type: extended
+    parent: color-velvet-base
+    friendlyName: Velvet - Lighter
+    value_hex: '#fd2641'
+    value_rgb: rgb(253, 38, 65)
+  -
+    name: color-velvet-lighter
+    type: extended
+    parent: color-velvet-base
+    friendlyName: Velvet - Lighter
+    value_hex: '#e17077'
+    value_rgb: rgb(225, 112, 119)
+
+  -
+    name: color-earth-darker
+    type: extended
+    parent: color-earth-base
+    friendlyName: Earth - Darker
+    value_hex: '#210b00'
+    value_rgb: rgb(33, 11, 0)
+  -
+    name: color-earth-dark
+    type: extended
+    parent: color-earth-base
+    friendlyName: Earth - Dark
+    value_hex: '#974e02'
+    value_rgb: rgb(151, 78, 2)
+  -
+    name: color-earth-base
+    type: extended
+    parent: color-earth-base
+    friendlyName: Earth - Base
+    value_hex: '#5e3929'
+    value_rgb: rgb(94, 57, 41)
+  -
+    name: color-earth-light
+    type: extended
+    parent: color-earth-base
+    friendlyName: Earth - Light
+    value_hex: '#eab57e'
+    value_rgb: rgb(234, 181, 126)
+  -
+    name: color-earth-lighter
+    type: extended
+    parent: color-earth-base
+    friendlyName: Earth - Lighter
+    value_hex: '#eab57e'
+    value_rgb: rgb(234, 181, 126)
+
+  -
+    name: color-night-darker
+    type: extended
+    parent: color-night-base
+    friendlyName: Night - Darker
+    value_hex: '#000000'
+    value_rgb: rgb(0, 0, 0)
+  -
+    name: color-night-dark
+    type: extended
+    parent: color-night-base
+    friendlyName: Night - Dark
+    value_hex: '#717171'
+    value_rgb: rgb(113, 113, 113)
+  -
+    name: color-night-base
+    type: extended
+    parent: color-night-base
+    friendlyName: Night - Base
+    value_hex: '#4A4A4A'
+    value_rgb: rgb(74, 74, 74)
+  -
+    name: color-night-light
+    type: extended
+    parent: color-night-base
+    friendlyName: Night - Light
+    value_hex: '#F9F9F9'
+    value_rgb: rgb(249, 249, 249)
+  -
+    name: color-night-lighter
+    type: extended
+    parent: color-night-base
+    friendlyName: Night - Lighter
+    value_hex: '#F9F9F9'
+    value_rgb: rgb(249, 249, 249)
 

@@ -6,10 +6,23 @@ layout: default
 
   {% include breadcrumbs.html %} {% include page-header.html %}
 
-  <section class="c-section u-spacing">
+  <section class="c-section u-spacing text">
     {{ content | markdownify }}
   </section>
   <!-- end c-section -->
+
+  <section class="c-section">
+      <h4>On this Page </h4>
+      <ul class="o-inline-list">
+        <li>
+          <a href="#bright" class="o-button o-button--simple">Bright Colors</a>
+          <a href="#muted" class="o-button o-button--simple">Muted Colors</a>
+          <a href="#neutral" class="o-button o-button--simple">Neutral Colors</a>
+          <a href="#extended" class="o-button o-button--simple">Extended Colors</a>
+        </li>
+      </ul>
+    </section>
+    <!-- end c-section -->
 
   <section class="c-section">
 
@@ -37,7 +50,7 @@ layout: default
     </section>
 
     <section class="l-section__block-row l-section__block-row--6-col l-grid u-break-gutter u-space--double--bottom">
-      <h2 id="muted" class="u-padding--left u-font--secondary--l">Neutrals</h2>
+      <h2 id="neutral" class="u-padding--left u-font--secondary--l">Neutrals</h2>
 
     <div class="l-grid-item u-padding--zero--sides u-flex">
       {% for color in site.data.color.colors_base %}
@@ -51,92 +64,26 @@ layout: default
   <!-- end c-section -->
 
   <section class="c-section">
-    <h2>Extended Colors</h2>
 
-    <h3 class="u-font--primary--m ">Treefrog</h3>
-    <table class="o-color-table o-table-slim">
-      <tbody>
-        {% for color in site.data.color.colors_extended %}
-        {% if color.parent == "color-treefrog-base" %}
-          {% include component-color-table-rows.html %}
-        {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
+    <h2 id="extended">Extended Colors</h2>
 
-    <h3 class="u-font--primary--m ">Ming</h3>
-    <table class="o-color-table o-table-slim">
-      <tbody>
-        {% for color in site.data.color.colors_extended %}
-        {% if color.parent == "color-ming-base" %}
-          {% include component-color-table-rows.html %}
-        {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
-    <h3 class="u-font--primary--m ">Bluejay</h3>
-    <table class="o-color-table o-table-slim">
-      <tbody>
-        {% for color in site.data.color.colors_extended %}
-        {% if color.parent == "color-bluejay-base" %}
-          {% include component-color-table-rows.html %}
-        {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
-    <h3 class="u-font--primary--m ">Iris</h3>
-    <table class="o-color-table o-table-slim">
-      <tbody>
-        {% for color in site.data.color.colors_extended %}
-        {% if color.parent == "color-iris-base" %}
-          {% include component-color-table-rows.html %}
-        {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
-    <h3 class="u-font--primary--m ">Lily</h3>
-    <table class="o-color-table o-table-slim">
-      <tbody>
-        {% for color in site.data.color.colors_extended %}
-        {% if color.parent == "color-lily-base" %}
-          {% include component-color-table-rows.html %}
-        {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
+    {% for color in site.data.color.colors_base %}
+    {% if color.shade == 'bright' or color.shade == 'muted' %}
 
-    <h3 class="u-font--primary--m ">Scarlett</h3>
-    <table class="o-color-table o-table-slim">
-      <tbody>
-        {% for color in site.data.color.colors_extended %}
-        {% if color.parent == "color-scarlett-base" %}
-          {% include component-color-table-rows.html %}
-        {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
+      <h3 class="u-font--primary--m u-space--double--top u-space--quarter--bottom">{{ color.friendlyName }}&nbsp;&nbsp;<small class="u-font--monospace u-color--gray">({{ color.shade }})</small></h3>
+      <table class="o-color-table o-table-slim">
+        <tbody>
+          {% for colorext in site.data.color.colors_extended %}
+          {% if colorext.parent == color.name %}
+            {% include component-color-table-rows.html %}
+          {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  {% endfor %}
 
-    <h3 class="u-font--primary--m ">Campfire</h3>
-    <table class="o-color-table o-table-slim">
-      <tbody>
-        {% for color in site.data.color.colors_extended %}
-        {% if color.parent == "color-campfire-base" %}
-          {% include component-color-table-rows.html %}
-        {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
 
-    <h3 class="u-font--primary--m ">Winter</h3>
-    <table class="o-color-table o-table-slim">
-      <tbody>
-        {% for color in site.data.color.colors_extended %}
-        {% if color.parent == "color-winter-base" %}
-          {% include component-color-table-rows.html %}
-        {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
   </section>
 
 

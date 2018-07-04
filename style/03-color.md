@@ -16,3 +16,5 @@ Recommended regional color systems will therefore be determined by local world d
 If your division has not yet provided a color system, use the recommended base palette represented below.
 
 Within this new, variable color system, the symbol can be adapted to match or compliment other layout elements, provided the symbol always remain a single, solid color. It is recommended that the Sabbath column be used as an area for tasteful color usage. **If using the symbol over a color in the Sabbath column it should appear in white.**
+
+Our colors consist of 3 primary sets, 8 [Bright Colors](#bright), 8 [Muted Colors](#muted), and 6 [Neutral Colors](#neutrals). The Bright and Muted colors have 5 [Extended Colors](#extended) with each color, a Base color with a Dark, Darker, Light and Lighter color.
