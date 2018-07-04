@@ -51,6 +51,96 @@ layout: default
   <!-- end c-section -->
 
   <section class="c-section">
+    <h2>Extended Colors</h2>
+
+    <h3 class="u-font--primary--m ">Treefrog</h3>
+    <table class="o-color-table o-table-slim">
+      <tbody>
+        {% for color in site.data.color.colors_extended %}
+        {% if color.parent == "color-treefrog-base" %}
+          {% include component-color-table-rows.html %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h3 class="u-font--primary--m ">Ming</h3>
+    <table class="o-color-table o-table-slim">
+      <tbody>
+        {% for color in site.data.color.colors_extended %}
+        {% if color.parent == "color-ming-base" %}
+          {% include component-color-table-rows.html %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+    <h3 class="u-font--primary--m ">Bluejay</h3>
+    <table class="o-color-table o-table-slim">
+      <tbody>
+        {% for color in site.data.color.colors_extended %}
+        {% if color.parent == "color-bluejay-base" %}
+          {% include component-color-table-rows.html %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+    <h3 class="u-font--primary--m ">Iris</h3>
+    <table class="o-color-table o-table-slim">
+      <tbody>
+        {% for color in site.data.color.colors_extended %}
+        {% if color.parent == "color-iris-base" %}
+          {% include component-color-table-rows.html %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+    <h3 class="u-font--primary--m ">Lily</h3>
+    <table class="o-color-table o-table-slim">
+      <tbody>
+        {% for color in site.data.color.colors_extended %}
+        {% if color.parent == "color-lily-base" %}
+          {% include component-color-table-rows.html %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h3 class="u-font--primary--m ">Scarlett</h3>
+    <table class="o-color-table o-table-slim">
+      <tbody>
+        {% for color in site.data.color.colors_extended %}
+        {% if color.parent == "color-scarlett-base" %}
+          {% include component-color-table-rows.html %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h3 class="u-font--primary--m ">Campfire</h3>
+    <table class="o-color-table o-table-slim">
+      <tbody>
+        {% for color in site.data.color.colors_extended %}
+        {% if color.parent == "color-campfire-base" %}
+          {% include component-color-table-rows.html %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h3 class="u-font--primary--m ">Winter</h3>
+    <table class="o-color-table o-table-slim">
+      <tbody>
+        {% for color in site.data.color.colors_extended %}
+        {% if color.parent == "color-winter-base" %}
+          {% include component-color-table-rows.html %}
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+
+  <section class="c-section">
 
     {% if page.usage %}
     <div class="c-section-header ">

@@ -269,35 +269,295 @@ colors_base:
 
 
 colors_extended:
+
+  -
+    name: color-treefrog-darker
+    type: extended
+    parent: color-treefrog-base
+    friendlyName: Tree Frog - Darker
+    value_hex:  '#1b2d00'
+    value_rgb:  rgb(27,45,0)
+
+  -
+    name: color-treefrog-dark
+    type: extended
+    parent: color-treefrog-base
+    friendlyName: Tree Frog - Dark
+    value_hex: '#355724'
+    value_rgb: rgb(53,87,36)
+
+  -
+    name: color-treefrog-base
+    type: extended
+    parent: color-treefrog-base
+    friendlyName: Tree Frog - Base
+    value_hex: '#2b8500'
+    value_rgb: rgb(43, 133,0)
+
   -
     name: color-treefrog-light
     type: extended
     parent: color-treefrog-base
     friendlyName: Tree Frog - Light
-    values:
-    - hex: #7cd500
-    - rgb: rgb(124,213,0)
+    value_hex: '#7cd500'
+    value_rgb: rgb(124,213,0)
   -
     name: color-treefrog-lighter
     type: extended
     parent: color-treefrog-base
     friendlyName: Tree Frog - Lighter
-    values:
-    - hex: #9fe180
-    - rgb: rgb(159,225,128)
-
-
+    value_hex: '#9fe180'
+    value_rgb: rgb(159,225,128)
 
   -
-    name: color-forest-base
-    type: primary
-    shade: muted
-    friendlyName: Forest
-    values:
-    - hex: #355724
-    - rgb: rgb(53, 87, 36)
-    - cmyk: 80, 21, 79, 64
-    - pantone: Pantone 357C
-    - sass: $c-theme-forest
-    - css: .u-background-color--forest
+    name: color-ming-darker
+    type: extended
+    parent: color-ming-base
+    friendlyName: Ming - Darker
+    value_hex: '#002938'
+    value_rgb: rgb(0,41,56)
+  -
+    name: color-ming-dark
+    type: extended
+    parent: color-ming-base
+    friendlyName: Ming - Dark
+    value_hex: '#255760'
+    value_rgb: rgb(37,87,96)
+  -
+    name: color-ming-base
+    type: extended
+    parent: color-ming-base
+    friendlyName: Ming - Base
+    value_hex: '#007f98'
+    value_rgb: rgb(0,127,152)
+  -
+    name: color-ming-light
+    type: extended
+    parent: color-ming-base
+    friendlyName: Ming - light
+    value_hex: '#00d5fe'
+    value_rgb: rgb(0,213,254)
+  -
+    name: color-ming-lighter
+    type: extended
+    parent: color-ming-base
+    friendlyName: Ming - Lighter
+    value_hex: '#9ae1f0'
+    value_rgb: rgb(154,225,240)
+
+  -
+    name: color-bluejay-darker
+    type: extended
+    parent: color-bluejay-base
+    friendlyName: Bluejay - Darker
+    value_hex: '#052252'
+    value_rgb: rgb(5, 34, 82)
+  -
+    name: color-bluejay-dark
+    type: extended
+    parent: color-bluejay-base
+    friendlyName: Bluejay - Dark
+    value_hex: '#2f557f'
+    value_rgb: rgb(47, 85, 127)
+  -
+    name: color-bluejay-base
+    type: extended
+    parent: color-bluejay-base
+    friendlyName: Bluejay - Base
+    value_hex: '#2e6de7'
+    value_rgb: rgb(46, 109, 231)
+  -
+    name: color-bluejay-light
+    type: extended
+    parent: color-bluejay-base
+    friendlyName: Bluejay - Light
+    value_hex: '#84adfc'
+    value_rgb: rgb(132, 173, 252)
+  -
+    name: color-bluejay-lighter
+    type: extended
+    parent: color-bluejay-base
+    friendlyName: Bluejay - Lighter
+    value_hex: '#84adfc'
+    value_rgb: rgb(132, 173, 252)
+
+  -
+    name: color-iris-darker
+    type: extended
+    parent: color-iris-base
+    friendlyName: Iris - Darker
+    value_hex: '#37034c'
+    value_rgb: rgb(55, 3, 76)
+  -
+    name: color-iris-dark
+    type: extended
+    parent: color-iris-base
+    friendlyName: Iris - Dark
+    value_hex: '#4b207f'
+    value_rgb: rgb(75, 32, 127)
+  -
+    name: color-iris-base
+    type: extended
+    parent: color-iris-base
+    friendlyName: Iris - Base
+    value_hex: '#9013fe'
+    value_rgb: rgb(144, 19, 254)
+  -
+    name: color-iris-light
+    type: extended
+    parent: color-iris-base
+    friendlyName: Iris - Light
+    value_hex: '#b971f7'
+    value_rgb: rgb(185, 113, 247)
+  -
+    name: color-iris-lighter
+    type: extended
+    parent: color-iris-base
+    friendlyName: Iris - Lighter
+    value_hex: '#b971f7'
+    value_rgb: rgb(185, 113, 247)
+
+  -
+    name: color-lily-darker
+    type: extended
+    parent: color-lily-base
+    friendlyName: Lily - Darker
+    value_hex: '#4e053f'
+    value_rgb: 'rgb(78, 5, 63)'
+  -
+    name: color-lily-dark
+    type: extended
+    parent: color-lily-base
+    friendlyName: Lily - Dark
+    value_hex: '#712551'
+    value_rgb: 'rgb(113, 37, 81)'
+
+  -
+    name: color-lily-base
+    type: extended
+    parent: color-lily-base
+    friendlyName: Lily - Base
+    value_hex: '#d41583'
+    value_rgb: 'rgb(212, 21, 131)'
+  -
+    name: color-lily-light
+    type: extended
+    parent: color-lily-base
+    friendlyName: Lily - Light
+    value_hex: '#ff61bc'
+    value_rgb: 'rgb(255, 97, 188)'
+  -
+    name: color-lily-lighter
+    type: extended
+    parent: color-lily-base
+    friendlyName: Lily - Lighter
+    value_hex: '#ff61bc'
+    value_rgb: 'rgb(255, 97, 188)'
+
+  -
+    name: color-scarlett-darker
+    type: extended
+    parent: color-scarlett-base
+    friendlyName: Scarlett - Darker
+    value_hex: '#440000'
+    value_rgb: rgb(68, 0, 0)
+  -
+    name: color-scarlett-dark
+    type: extended
+    parent: color-scarlett-base
+    friendlyName: Scarlett - Dark
+    value_hex: '#782832'
+    value_rgb: rgb(120, 40, 50)
+  -
+    name: color-scarlett-base
+    type: extended
+    parent: color-scarlett-base
+    friendlyName: Scarlett - Base
+    value_hex: '#d0021b'
+    value_rgb: rgb(208, 2, 27)
+  -
+    name: color-scarlett-light
+    type: extended
+    parent: color-scarlett-base
+    friendlyName: Scarlett - Light
+    value_hex: '#fd2641'
+    value_rgb: rgb(253, 38, 65)
+  -
+    name: color-scarlett-lighter
+    type: extended
+    parent: color-scarlett-base
+    friendlyName: Scarlett - Lighter
+    value_hex: '#e17077'
+    value_rgb: rgb(225, 112, 119)
+  -
+    name: color-campfire-darker
+    type: extended
+    parent: color-campfire-base
+    friendlyName: Campfire - Darker
+    value_hex: '#361300'
+    value_rgb: rgb(54, 19, 0)
+  -
+    name: color-campfire-dark
+    type: extended
+    parent: color-campfire-base
+    friendlyName: Campfire - Dark
+    value_hex: '#6f2727'
+    value_rgb: rgb(111, 39, 39)
+  -
+    name: color-campfire-base
+    type: extended
+    parent: color-campfire-base
+    friendlyName: Campfire - Base
+    value_hex: '#cd4900'
+    value_rgb: rgb(205, 73, 0)
+  -
+    name: color-campfire-light
+    type: extended
+    parent: color-campfire-base
+    friendlyName: Campfire - Light
+    value_hex: '#ffa06c'
+    value_rgb: rgb(255, 160, 108)
+  -
+    name: color-campfire-lighter
+    type: extended
+    parent: color-campfire-base
+    friendlyName: Campfire - Lighter
+    value_hex: '#ffa06c'
+    value_rgb: rgb(255, 160, 108)
+  -
+    name: color-winter-darker
+    type: extended
+    parent: color-winter-base
+    friendlyName: Winter - Darker
+    value_hex: '#222222'
+    value_rgb: rgb(34, 34, 34)
+  -
+    name: color-winter-dark
+    type: extended
+    parent: color-winter-base
+    friendlyName: Winter - Dark
+    value_hex: '#4A4A4A'
+    value_rgb: rgb(74, 74, 74)
+  -
+    name: color-winter-base
+    type: extended
+    parent: color-winter-base
+    friendlyName: Winter - Base
+    value_hex: '#717171'
+    value_rgb: rgb(113, 113, 113)
+  -
+    name: color-winter-light
+    type: extended
+    parent: color-winter-base
+    friendlyName: Winter - Light
+    value_hex: '#F9F9F9'
+    value_rgb: rgb(249, 249, 249)
+  -
+    name: color-winter-lighter
+    type: extended
+    parent: color-winter-base
+    friendlyName: Winter - Lighter
+    value_hex: '#F9F9F9'
+    value_rgb: rgb(249, 249, 249)
+
 
