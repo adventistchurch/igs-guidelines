@@ -2,13 +2,14 @@
 layout: component-detail
 group: utilities
 permalink: /utilities/borders
+section: Documentation
 
 title: Borders
 description: Border classes to add horizontal borders to block-level elements.
 
 usage:
 - title: When to Use
-  description: 
+  description:
 - title: Default border
   description: The default border is a 1px, solid gray border.
 
@@ -43,7 +44,7 @@ classes:
 
 - className: o-divider
   description: Creates a 1px horizontal border on the right side of an element for dividing side-by-side text blocks/spans.
-  
+
 
 
 

@@ -2,13 +2,14 @@
 layout: component-detail
 group: utilities
 permalink: /utilities/color
+section: Documentation
 
 title: Color
 description: Common color modifier classes.
 
 usage:
 - title: When to Use
-  description: 
+  description:
 
 classes:
 

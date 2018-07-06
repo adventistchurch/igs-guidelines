@@ -2,9 +2,10 @@
 layout: component-detail
 group: utilities
 permalink: /utilities/display
+section: Documentation
 
 title: Display
-description: The display states 
+description: The display states
 
 usage:
 - title: When to Use
@@ -16,13 +17,13 @@ classes:
 - className: u-display--block
   description: Applies `display block` to an element.
 
-- className: u-shift--right--1-col--at-medium 
+- className: u-shift--right--1-col--at-medium
   description: Shifts the element 1 column to the `right` at `medium` and higher.
-- className: u-shift--left--1-col--at-medium 
+- className: u-shift--left--1-col--at-medium
   description: Shifts the element 1 column to the `left` from medium to `large` and `xxlarge` and higher.
-- className: u-shift--left--1-col--at-large 
+- className: u-shift--left--1-col--at-large
   description: Shifts the element 1 column to the `left` at `large` and higher.
-- className: u-shift--left--1-col--at-xxlarge 
+- className: u-shift--left--1-col--at-xxlarge
   description: Shifts the element 1 column to the `left` at `xxlarge` and higher.
 
 - className: u-hide-until--s

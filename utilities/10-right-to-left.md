@@ -2,13 +2,14 @@
 layout: component-detail
 group: utilities
 permalink: /utilities/right-to-left
+section: Documentation
 
 title: Right to Left
 description: Classes used to deal with Right-to-Left layouts.
 
 usage:
 - title: When to Use
-  description: 
+  description:
 
 classes:
 

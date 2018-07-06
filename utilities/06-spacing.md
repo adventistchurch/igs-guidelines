@@ -3,6 +3,7 @@ layout: component-detail
 group: utilities
 permalink: /utilities/spacing
 
+section: Documentation
 title: Spacing
 description: Adjust whitespace with horizontal and vertical spacing with `block` level `margin` adjustment helpers.
 
@@ -107,7 +108,7 @@ classes:
   description: Use this class to apply 4 times the default top `margin` to the elements inside the container.
 - className: u-spacing--zero
   description: Use this class to apply a top `margin` of 0 to the elements inside the container.
-  
+
 
 - className: u-spacing--unitl-small
   description: Use this class to apply the default top `margin` to the elements inside the container until the viewport reaches the `small` size.

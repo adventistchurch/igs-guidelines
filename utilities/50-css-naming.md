@@ -2,6 +2,8 @@
 layout: page
 type: detail
 group: utilities
+section: Documentation
+
 title: CSS Class Naming
 url: /utilities/css-naming
 
@@ -15,11 +17,12 @@ https://sparkdesignsystem.com/docs/class-naming-convention
 CSS Classes use the following naming prefixes:
 
 - `u-`: <strong>Utilities</strong> - Very specific classes that typically serve a single purpose.
+  - `u-color--`:
   - `u-font--`:
   - `u-text-transform--`:
   - `u-theme--`:
 
-- `c-`: <strong>Color</strong> -
+- `c-`: <strong>Component</strong> -
 - `o-`: <strong>Object</strong> - These are cosmetic-free design patterns that are the skeleton of an element.
 - `l-`: <strong>Layout</strong> -
 - ``:

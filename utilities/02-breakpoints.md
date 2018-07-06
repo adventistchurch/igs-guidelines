@@ -2,6 +2,7 @@
 layout: component-detail
 group: utilities
 permalink: /utilities/breakpoints
+section: Documentation
 
 title: Breakpoints
 description: The common breakpoints used in ALPS.

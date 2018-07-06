@@ -2,6 +2,7 @@
 layout: component-detail
 group: utilities
 permalink: /utilities/misc
+section: Documentation
 
 title: Miscellaneous Classes
 description: Various classes that don't fit other categories.
@@ -28,9 +29,9 @@ classes:
 
 - className: screen-reader-text
   description: Completely remove from the flow but leave available to screen readers.
-  
-  
-  
+
+
+
 
 
 

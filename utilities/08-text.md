@@ -2,6 +2,7 @@
 layout: component-detail
 group: utilities
 permalink: /utilities/text
+section: Documentation
 
 title: Text
 description: Classes for styling text.

@@ -2,6 +2,7 @@
 layout: component-detail
 group: utilities
 permalink: /utilities/padding
+section: Documentation
 
 title: Padding
 description: Adjust whitespace with horizontal and vertical spacing with`block` level `padding` adjustment helpers.
@@ -101,7 +102,7 @@ classes:
 - className: u-padding--left--until-xxlarge
   description: Use this class to apply a `padding` to the left side on viewports below `large` of `0.9375rem`, or `15px` and on viewports of `large` or higher of `1.25rem` or `20px`. Above xxlarge, the padding drops to `0`.
 - className: u-padding--zero--sides
-  description: Use this class to apply a padding of `0 !important` to all sides.  
+  description: Use this class to apply a padding of `0 !important` to all sides.
 
 
 
