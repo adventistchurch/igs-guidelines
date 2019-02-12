@@ -2,16 +2,22 @@
 layout: default
 ---
 
-<article class="l-grid-item l-grid-item--l--4-col l-grid-item--xl--4-col u-spacing">
+<article class="l-grid-item--l--4-col l-grid-item--xl--4-col u-padding--double--top u-padding--double--bottom u-padding--zero--left u-padding--zero--right">
 
-  {% include breadcrumbs.html %} {% include page-header.html %}
+  <div class="u-spacing u-padding--left u-padding--right">
+    {% include breadcrumbs.html %}
+  </div>
 
-  <section class="c-section u-spacing text">
+  <div class="text u-spacing">
+    {% include page-header.html %}
+  </div>
+
+  <section class="c-section u-spacing text u-padding--top">
     {{ content | markdownify }}
   </section>
   <!-- end c-section -->
 
-  <section class="c-section">
+  <section class="c-section u-spacing text">
       <h4>On this Page </h4>
       <ul class="o-inline-list">
         <li>
@@ -26,18 +32,19 @@ layout: default
 
   <section class="c-section">
 
-    <section class="l-section__block-row l-section__block-row--6-col l-grid u-break-gutter u-space--double--bottom">
-    <h2 id="bright" class="u-padding--left u-font--secondary--l">Bright Colors</h2>
+    <section class="l-section__block-row--6-col l-grid u-space--double--bottom">
+        <h2 id="bright" class="u-padding--left u-font--secondary--l">Bright Colors</h2>
 
-      <div class="l-grid-item u-padding--zero--sides u-flex">
-        {% for color in site.data.color.colors_base %}
-          {% if color.shade == "bright" %}
-            {% include component-color-block.html %}
-          {% endif %}
-        {% endfor %}
-      </div>
+        <div class="l-grid-item u-padding--zero--sides u-flex">
+          {% for color in site.data.color.colors_base %}
+            {% if color.shade == "bright" %}
+              {% include component-color-block.html %}
+            {% endif %}
+          {% endfor %}
+        </div>
     </section>
-    <section class="l-section__block-row l-section__block-row--6-col l-grid u-break-gutter u-space--double--bottom">
+
+    <section class="l-section__block-row--6-col l-grid u-space--double--bottom">
         <h2 id="muted" class="u-padding--left u-font--secondary--l">Muted Colors</h2>
 
       <div class="l-grid-item u-padding--zero--sides u-flex">
@@ -49,17 +56,17 @@ layout: default
       </div>
     </section>
 
-    <section class="l-section__block-row l-section__block-row--6-col l-grid u-break-gutter u-space--double--bottom">
+    <section class="l-section__block-row--6-col l-grid u-space--double--bottom">
       <h2 id="neutral" class="u-padding--left u-font--secondary--l">Neutrals</h2>
 
-    <div class="l-grid-item u-padding--zero--sides u-flex">
-      {% for color in site.data.color.colors_base %}
-        {% if color.shade == "neutral" %}
-          {% include component-color-block.html %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </section>
+      <div class="l-grid-item u-padding--zero--sides u-flex">
+        {% for color in site.data.color.colors_base %}
+          {% if color.shade == "neutral" %}
+            {% include component-color-block.html %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
   </section>
   <!-- end c-section -->
 

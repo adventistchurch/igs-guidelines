@@ -5,13 +5,19 @@ primary_menu:
     subnav:
       -
         title: The Creation Grid
-        url: /creation-grid
+        url: /style/creation-grid
       -
         title: The Church Symbol
-        url: /church-symbol
+        url: /style/church-symbol
+      -
+        title: Advent Sans
+        url: /style/advent-sans
+      -
+        title: Color
+        url: /style/color
   -
-    title: How To
-    url: /how-to-use-these-guidelines/
+    title: Getting Started
+    url: /getting-started
 
 secondary_menu:
   -
@@ -26,16 +32,13 @@ secondary_menu:
 footer_menu:
   -
     title: About
-    url: /about
-  -
-    title: Roadmap
-    url: /roadmap
+    url: https://identity.adventist.org/
   -
     title: Release History
-    url: /release-history
+    url: https://github.com/adventistchurch/alps/releases
   -
     title: Contribute
-    url: /contribute
+    url: https://github.com/adventistchurch/alps
 
 
 social_menu:

@@ -1,12 +1,4 @@
-.DS_Store
-/node_modules
-.sass-cache/
 _site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-*.css.map
-.DS_Store
-
-
-# Ignore IDE-specific files
-*.sublime-project
-*.sublime-workspace

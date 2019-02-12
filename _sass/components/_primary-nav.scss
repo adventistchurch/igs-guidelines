@@ -2,6 +2,18 @@
     #PRIMARY NAVIGATION
 \*------------------------------------*/
 
+.c-sidebar {
+	@media (min-width: 901px) {
+		margin-top: 1.25rem;
+
+		> .c-block-wrap {
+			height: 100%;
+			padding-top: 1.25rem;
+			padding-bottom: 1.25rem;
+		}
+	}
+}
+
 /**
  * Primary navigation most likely existing in the header
  */
@@ -13,6 +25,11 @@
 		margin-left: -1rem;
 		margin-right: -1rem;
 	}
+}
+
+.c-block__heading {
+	position: relative;
+	top: -4px;
 }
 
 /**
@@ -64,7 +81,11 @@
  */
 .c-primary-nav__link {
 	display: block;
-	padding: 0.5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-left: -0.5rem;
+	padding: 0.5rem;
 	cursor: pointer;
 
     &:focus {
@@ -76,6 +97,10 @@
 	 */
 	.c-header--vertical & {
 		padding: 0.5rem 1rem;
+	}
+
+	svg {
+		// margin-left: 0.5rem;
 	}
 }
 
@@ -143,7 +168,13 @@
  * Primary navigation sublist
  */
 .c-primary-nav__sublist {
+	margin-left: -0.5rem;
 	border-left: 1px solid $color-gray-27;
+
+	.c-primary-nav__sublist {
+		margin-left: 0;
+		border-left: 0;
+	}
 }
 
 /**
@@ -153,7 +184,7 @@
  */
 .c-primary-nav__sublist:first-of-type {
 	display: none;
-	margin-left: 1rem;
+	// margin-left: 1rem;
 
 	/**
 	 * Primary navigation sublist within vertical header
@@ -178,7 +209,7 @@
 		@media all and (min-width: $bp-xl) {
 			// background: $color-gray-73;
 			padding: 0 1rem;
-			margin: 0;
+			// margin: 0;
 			// position: absolute;
 			top: 100%;
 			z-index: 6;
@@ -202,7 +233,7 @@
 	}
 
 	@media all and (min-width: $bp-xl) {
-		margin-left: 0;
+		// margin-left: 0;
 	}
 }
 
