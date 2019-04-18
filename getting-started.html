@@ -1,37 +1,50 @@
 ---
 layout: page
 title: Getting Started
-description: The getting started page should provide information for how to get up and running with the design system.
+description:
 ---
 
-### Downloading
-Provide links and information for downloading the design system's files:
+## Welcome to the Adventist Living Pattern System
 
-<a href="{{ "/downloads" | prepend: site.baseurl }}" class="o-button">Download Design System Files</a>
+We are glad you found ALPS. Take a look around, and see what you think. There is lots to explore. You can find the code on [Github](https://github.com/adventistchurch/alps), check it out, [file issues](https://github.com/adventistchurch/alps/issues), and create pull requests. This code belongs to the Adventist church. It’s ours!
 
-### File Structure
-Provide an overview of the file system structure and how users of the design system should integrate the design system's code into their project. This info will obviously vary depending on your organization's environment(s).
+The Adventist Living Pattern System (ALPS) is a set of design patterns created by the Seventh-day Adventist Church for use around the world by Adventist churches, schools, and organizational units. The purpose of ALPS is to make it easy for our church to create good looking sites that promote the brand of the church, while allowing for individuality and customization of each site.
 
-```
-design-system-1.0/
-├── css/
-│   ├── design-system-1.0.css
-│   ├── design-system-1.0.min.css
-├── fonts/
-│   └── [design system web fonts]
-├── images/
-│   ├── design-system-icons.svg
-└── js/
-│   ├── design-system-1.0.js
-│   └── design-system-1.0.min.js
-└── [additional files]
-```
+As you browse through the pages of this site, you will see examples of patterns for different types of pages. From [home pages](/templates/home) to [channel pages](/templates/channel-main), to [basic pages](/templates/basic-page), ALPS is designed to be beautiful, fast and flexible, while maintaining a consistent brand across the sites that use it.
 
-### Creating pages and using components
-Provide information on how to properly link up design system files in order to create a basic "hello world" template. From there, describe the process of incorporating design system's components into the project. Again, this will undoubtedly vary based on the setup and technologies your organization utilizes.
+Take a look for yourself!
 
-### Code conventions
-Provide a link to learn more about <a href="{{ "/guidelines/code" | prepend: site.baseurl }}">code conventions</a>.
+## Include It in Your Project
 
-## Support and Community
-Provide information on where people can go to <a href="{{ "/support" | prepend: site.baseurl }}">ask for help</a>, and provide a link to the <a href="{{ "/contribute" | prepend: site.baseurl }}">contribution page</a> to help plant tback to the system.
+Want to include ALPS in your project? The Adventist church is making the CSS and Javascript needed to build an ALPS site available via a public CDN. All you need to do to implement the latest styles is to link the files provides below and you will be up to date.
+
+Here are the links you need to make it happen.
+
+### Header
+
+Include this code in the `<head>` of your page. This include the fonts, ALPS css, and the Javascript needed to start the page.
+
+<div class="pattern-code">
+<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-0">Copy</button>
+
+<pre class="highlight pattern-code-block">
+<code class="language-html" id="pattern-code-0">
+&lt;link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Noto+Serif:400,400i,700,700i" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" type="text/css" href="//cdn.adventist.org/alps/3/latest/css/main.css" media="all"&gt;
+&lt;script src="//cdn.adventist.org/alps/3/latest/js/head-script.min.js" type="text/javascript">&lt;/script&gt;
+</code>
+</pre>
+</div>
+
+### Footer
+
+Include this code in the footer of your page, right before the closing `</body>` tag.
+
+<div class="pattern-code">
+<pre class="highlight pattern-code-block">
+<code class="language-html" id="pattern-code-0">
+&lt;script src="https://code.jquery.com/jquery-2.2.4.min.js">&lt;/script&gt;
+&lt;script src="//cdn.adventist.org/alps/3/latest/js/script.min.js" type="text/javascript">&lt;/script&gt;
+</code>
+</pre>
+</div>

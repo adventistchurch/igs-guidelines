@@ -2,36 +2,32 @@
 layout: default
 ---
 
+<article class="l-grid-item--l--4-col l-grid-item--xl--4-col u-padding--double--top u-padding--double--bottom u-padding--zero--left u-padding--zero--right">
+    <div class="text u-spacing">
+        {% if page.title %}
+            <h1 class="u-font--secondary--xl u-theme--color--darker">{{ page.title }} {% if page.status %}{% include badge.html %}{% endif %}</h1>
+        {% endif %}
 
-<article class=" l-grid-item--l--4-col l-grid-item--xl--4-col u-padding--zero--left u-padding--zero--right">
-  <div class="text u-spacing">
-    <h1 class="u-font--secondary--xl u-theme--color--darker">{{ page.title }} {% if page.status %}
-      {% include badge.html %}{% endif %}</h1>
-    <p class="o-highlight u-padding u-background-color--gray--light can-be--dark-dark">
-      {{ page.description }}
-    </p>
+        {% if page.description %}
+            <p class="o-highlight u-padding u-background-color--gray--light can-be--dark-dark">
+                {{ page.description }}
+            </p>
+        {% endif %}
 
-    {{ content | markdownify }}
-  </div><!--end c-text-passage-->
+        {{ content | markdownify }}
+    </div><!--text u-spacing-->
 
+    <section class="l-section__block-row l-section__block-row--4-col l-grid l-grid--7-col u-space--top ">
+        <div class="l-grid-item u-padding--zero--sides u-flex">
 
+            {% assign the_group = page.group %}
 
-<section class="l-section__block-row l-section__block-row--4-col l-grid l-grid--7-col u-space--top ">
-  <div class="l-grid-item u-padding--zero--sides u-flex">
+            {% for my_page in site.pages %}
+                {% if my_page.group == the_group and my_page.layout != "landing" %}
+                    {% include card.html %}
+                {% endif %}
+            {% endfor %}
 
-
-    {% assign the_group = page.group %}
-
-    {% for my_page in site.pages %}
-      {% if my_page.group == the_group and my_page.layout != "landing" %}
-        {% include card.html %}
-      {% endif %}
-    {% endfor %}
-
-  </div>
-</section>
-
-
+        </div>
+    </section>
 </article>
-
-

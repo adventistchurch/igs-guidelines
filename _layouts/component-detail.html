@@ -2,209 +2,254 @@
 layout: default
 ---
 
-<article class="l-grid-item l-grid-item--l--4-col l-grid-item--xl--4-col u-spacing">
+<article class="l-grid-item--l--4-col l-grid-item--xl--4-col u-padding--double--top u-padding--double--bottom u-padding--zero--left u-padding--zero--right">
 
-{% include breadcrumbs.html %}
+	<div class="u-spacing u-padding--left u-padding--right">
+	  {% include breadcrumbs.html %}
+	</div>
 
-{% include page-header.html %}
+	<div class="text u-spacing">
+	  {% include page-header.html %}
+	</div>
 
-<section class="c-section">
+	<div class="u-spacing">
+		<section class="c-section u-spacing u-padding--top">
+			{% if page.variations.length > 1 or page.variations[0].title %}
+				<div class="c-tabs js-tabs">
 
-	<div class="c-tabs js-tabs">
+					<ul class="c-tabs__list">
+						{% for variation in page.variations %}
+							<li class="c-tabs__item">
+								<a href="#tab-{{ variation.title | downcase | replace: ' ', '-' }}" class="c-tabs__link js-tab" data-code-tabs="tab-{{ variation.title | downcase | replace: ' ', '-' }}">{% if variation.title %}{{ variation.title }}{% endif %}</a>
+							</li><!-- end c-tabs__item -->
+						{% endfor %}
+					</ul><!-- end c-tabs__list -->
 
-		<ul class="c-tabs__list">
-			{% for variation in page.variations %}
-			<li class="c-tabs__item">
-				<a href="#tab-{{ variation.title | downcase | replace: ' ', '-' }}" class="c-tabs__link js-tab" data-code-tabs="tab-{{ variation.title | downcase | replace: ' ', '-' }}">{% if variation.title %}{{ variation.title }}{% endif %}</a>
-			</li><!-- end c-tabs__item -->
-			{% endfor %}
+					<div class="c-tabs__body">
 
+						{% for variation in page.variations %}
+							<div class="c-tabs__panel js-tabs-panel" id="tab-{{ variation.title | downcase | replace: ' ', '-' }}">
 
-		</ul><!-- end c-tabs__list -->
+								<section class="c-section">
+				          			<header class="c-section__header u-spacing--quarter u-padding--half">
+										{% if variation.title %}
+											<h5 class="c-section__title">{{ variation.title }} {% if variation.styleModifier %}<code class="u-font-size-med">{{ variation.styleModifier }}</code>{% endif %}</h5>
+										{% endif %}
 
-		<div class="c-tabs__body">
+										{% if variation.description %} {{ variation.description | markdownify }} {% endif %}
+									</header>
 
-			{% for variation in page.variations %}
-			<div class="c-tabs__panel js-tabs-panel" id="tab-{{ variation.title | downcase | replace: ' ', '-' }}">
+									{% if variation.codepenUser and variation.codepenID %}
+										<p data-height="265" data-theme-id="0" data-slug-hash="{{ variation.codepenID }}" data-default-tab="js,result" data-user="{{ variation.codepenUser }}" data-embed-version="2" data-pen-title="{{ variation.codepenID }}" class="codepen">See the Pen <a href="https://codepen.io/{{ variation.codepenUser }}/pen/EbgJYG/">{{ variation.codepenID }}</a> (<a href="https://codepen.io/{{ variation.codepenUser }}">@{{ variation.codepenID }}</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+										<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+									{% endif %}
 
-				<section class="c-section">
-          <header class="c-section__header u-spacing--quarter u-padding--half">
-						{% if variation.title %}<h5 class="c-section__title">{{ variation.title }} {% if variation.styleModifier %}<code class="u-font-size-med">{{ variation.styleModifier }}</code>{% endif %}</h5>{% endif %}
-						{% if variation.description %} {{ variation.description | markdownify }} {% endif %}
-					</header>
+									{% if variation.includeClassification and variation.includeCategory and variation.includeName %}
+										{% if variation.includeClassification == 'atoms' %}
+											{% assign atomicNumber = "00" %}
+										{% elsif variation.includeClassification == 'molecules' %}
+											{% assign atomicNumber = "01" %}
+										{% elsif variation.includeClassification == 'organisms' %}
+											{% assign atomicNumber = "02" %}
+										{% endif %}
 
-					{% if variation.codepenUser and variation.codepenID %}
+										{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
+
+										{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.html{% endcapture %}
+
+										<div class="iffframe">
+
+											<iframe class="iffframe__iframe iffframe__iframe--{{ variation.includeName }}" frameBorder="0" width="100%" height="100%" src="{{ path | prepend: site.baseurl }}"></iframe>
+
+											<div class="iffframe__handle"></div>
+
+										</div><!--end iffframe-->
+									{% endif %}
+
+								</section><!--end section-->
+
+							</div><!--end c-tabs__panel-->
+						{% endfor %}
+
+					</div><!--end c-tabs__body-->
+
+				</div><!--end c-tabs-->
+			{% else %}
+				{% assign variation = page.variations[0] %}
+
+				{% if variation.description %} {{ variation.description | markdownify }} {% endif %}
+
+				{% if variation.codepenUser and variation.codepenID %}
 					<p data-height="265" data-theme-id="0" data-slug-hash="{{ variation.codepenID }}" data-default-tab="js,result" data-user="{{ variation.codepenUser }}" data-embed-version="2" data-pen-title="{{ variation.codepenID }}" class="codepen">See the Pen <a href="https://codepen.io/{{ variation.codepenUser }}/pen/EbgJYG/">{{ variation.codepenID }}</a> (<a href="https://codepen.io/{{ variation.codepenUser }}">@{{ variation.codepenID }}</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 					<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-					{% endif %}
+				{% endif %}
 
-					{% if variation.includeClassification and variation.includeCategory and variation.includeName %}
-
+				{% if variation.includeClassification and variation.includeCategory and variation.includeName %}
 					{% if variation.includeClassification == 'atoms' %}
-					{% assign atomicNumber = "00" %}
+						{% assign atomicNumber = "00" %}
 					{% elsif variation.includeClassification == 'molecules' %}
-					{% assign atomicNumber = "01" %}
+						{% assign atomicNumber = "01" %}
 					{% elsif variation.includeClassification == 'organisms' %}
-					{% assign atomicNumber = "02" %}
+						{% assign atomicNumber = "02" %}
 					{% endif %}
 
 					{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
 
 					{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.html{% endcapture %}
 
+					{% if variation.includeName == 'drawer-navigation' %}
+						<div class="iffframe--toggle">
+							<div class="o-button js-toggle-drawer-navigation">Toggle drawer</div>
+						</div>
+					{% endif %}
+
 					<div class="iffframe">
 
-						<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="{{ path | prepend: site.baseurl }}"></iframe>
+						<iframe class="iffframe__iframe iffframe__iframe--{{ variation.includeName }}" frameBorder="0" width="100%" height="100%" src="{{ path | prepend: site.baseurl }}"></iframe>
 
 						<div class="iffframe__handle"></div>
 
 					</div><!--end iffframe-->
+				{% endif %}
+			{% endif %}
+
+			<ul class="c-tabs-list js-tabs-list">
+				{% for variation in page.variations %}
+
+					{% if variation.includeClassification and variation.includeCategory and variation.includeName %}
+
+						{% if variation.includeClassification == 'atoms' %}
+							{% assign atomicNumber = "00" %}
+						{% elsif variation.includeClassification == 'molecules' %}
+							{% assign atomicNumber = "01" %}
+						{% elsif variation.includeClassification == 'organisms' %}
+							{% assign atomicNumber = "02" %}
+						{% endif %}
+
+						{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
+
+						{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.rendered.html{% endcapture %}
+
 					{% endif %}
 
-				</section><!--end section-->
+					<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-{{ variation.title | downcase | replace: ' ', '-' }}">
 
-			</div><!--end c-tabs__panel-->
-			{% endfor %}
+					{% if variation.includeClassification and variation.includeCategory and variation.includeName %}
+						<div class="c-tabs test-tabs  js-tabs">
 
-		</div><!--end c-tabs__body-->
+							<ul class="c-tabs__list">
+								<li class="c-tabs__item">
+									<a href="#html-{{ forloop.index }}" class="c-tabs__link js-tab">HTML</a>
+								</li><!-- end c-tabs__item -->
 
-	</div><!--end c-tabs-->
+								<li class="c-tabs__item">
+									<a href="#twig-{{ forloop.index }}" class="c-tabs__link js-tab">Twig</a>
+								</li><!-- end c-tabs__item -->
 
-	<ul class="c-tabs-list js-tabs-list">
-		{% for variation in page.variations %}
+							</ul><!-- end c-tabs__list -->
 
-		{% if variation.includeClassification and variation.includeCategory and variation.includeName %}
+							<div class="c-tabs__body ">
+								<div class="c-tabs__panel js-tabs-panel" id="html-{{ forloop.index }}">
 
-			{% if variation.includeClassification == 'atoms' %}
-			{% assign atomicNumber = "00" %}
-			{% elsif variation.includeClassification == 'molecules' %}
-			{% assign atomicNumber = "01" %}
-			{% elsif variation.includeClassification == 'organisms' %}
-			{% assign atomicNumber = "02" %}
-			{% endif %}
+									{% capture markupOnlyPath %}/patterns/{{ componentString }}/{{ componentString }}.markup-only.html{% endcapture %}
 
-			{% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
+									<div class="pattern-code">
+										<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
+										<pre class="highlight pattern-code-block line-numbers"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
+									</div>
 
-			{% capture path %}/patterns/{{ componentString }}/{{ componentString }}.rendered.html{% endcapture %}
+								</div><!--end c-tabs__panel-->
+								<div class="c-tabs__panel js-tabs-panel" id="twig-{{ forloop.index }}">
 
-		{% endif %}
-		<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-{{ variation.title | downcase | replace: ' ', '-' }}">
+									{% capture markupOnlyPath %}/patterns/{{ componentString }}/{{ componentString }}.twig{% endcapture %}
 
-			{% if variation.includeClassification and variation.includeCategory and variation.includeName %}
-			<div class="c-tabs test-tabs  js-tabs">
+									<div class="pattern-code">
+										<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
+										<pre class="highlight pattern-code-block line-numbers"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
+									</div>
 
-				<ul class="c-tabs__list">
-					<li class="c-tabs__item">
-						<a href="#html-{{ forloop.index }}" class="c-tabs__link js-tab">HTML</a>
-					</li><!-- end c-tabs__item -->
+								</div><!--end c-tabs__panel-->
+							</div><!-- end c-tabs__body-->
+						</div><!-- end c-tabs -->
+					{% endif %}
 
-					<li class="c-tabs__item">
-						<a href="#twig-{{ forloop.index }}" class="c-tabs__link js-tab">Twig</a>
-					</li><!-- end c-tabs__item -->
-
-				</ul><!-- end c-tabs__list -->
-
-				<div class="c-tabs__body ">
-					<div class="c-tabs__panel js-tabs-panel" id="html-{{ forloop.index }}">
-
-						{% capture markupOnlyPath %}/patterns/{{ componentString }}/{{ componentString }}.markup-only.html{% endcapture %}
-
-						<div class="pattern-code">
-							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
-							<pre class="highlight pattern-code-block line-numbers"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
-						</div>
-
-					</div><!--end c-tabs__panel-->
-					<div class="c-tabs__panel js-tabs-panel" id="twig-{{ forloop.index }}">
-
-						{% capture markupOnlyPath %}/patterns/{{ componentString }}/{{ componentString }}.twig{% endcapture %}
-
-						<div class="pattern-code">
-							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-{{ forloop.index }}">Copy</button>
-							<pre class="highlight pattern-code-block line-numbers"><code class="language-html" id="pattern-code-{{ forloop.index }}">{% highlight liquid %}{% include {{ markupOnlyPath }} %}{% endhighlight %}</code></pre>
-						</div>
-
-					</div><!--end c-tabs__panel-->
-				</div><!-- end c-tabs__body-->
-			</div><!-- end c-tabs -->
-			{% endif %}
-
-			</li><!-- end c-tabs-list__item -->
-		{% endfor %}
-
-	</ul><!-- end c-tabs-list -->
-</section><!-- end c-section -->
-
-<section class="c-section">
-
-	{% if page.usage %}
-	<div class="c-section-header ">
-
-    <h1 class="c-section-header__title u-font--secondary--l u-theme--color--darker">Usage</h1>
-
-	</div><!-- end c-section-header -->
-
-	<div class="c-text-passage u-spacing">
-		{% include definition-list.html %}
-
-	</div><!-- end c-text-passage -->
-	{% endif %}
-
-
-	<div class="c-table-container">
-
-		<table class="c-table ">
-
-			<thead class="c-table__header">
-
-				<tr class="c-table__header-row">
-				<th scope="col" class="c-table__header-cell ">Class Name</th>
-				<th scope="col" class="c-table__header-cell ">Description</th>
-				</tr><!-- c-table__header-row -->
-
-			</thead><!-- end c-table__header -->
-
-			<tbody class="c-table__body ">
-				{% for class in page.classes %}
-
-				<tr class="c-table__row ">
-
-					<td class="c-table__cell ">
-						<code class="u-no-wrap">
-							{{ class.className }}
-						</code>
-					</td>
-
-					<td class="c-table__cell ">
-						{% capture desc %}{{ class.description }}{% endcapture %}
-						{% if class.description %}{{ desc | markdownify }}{% endif %}
-					</td>
-
-				</tr><!-- end c-table__row -->
+					</li><!-- end c-tabs-list__item -->
 				{% endfor %}
 
+			</ul><!-- end c-tabs-list -->
+		</section><!-- end c-section -->
 
-			</tbody><!-- end c-table__body -->
+		<section class="c-section">
 
-		</table><!--end c-table-->
+			{% if page.usage %}
+				<div class="c-section-header ">
 
-	</div><!--end c-table-container-->
+			    <h1 class="c-section-header__title u-font--secondary--l u-theme--color--darker">Usage</h1>
 
-</section><!-- end c-section -->
+				</div><!-- end c-section-header -->
 
-<section class="c-section c-footer__copyright u-background-color--gray--light u-padding--half">
+				<div class="c-text-passage u-spacing">
+					{% include definition-list.html %}
 
-  <h2 class="u-font--secondary--m u-theme--color--darker">Fine print</h2>
+				</div><!-- end c-text-passage -->
+			{% endif %}
+
+			{% if page.classes %}
+				<div class="c-table-container">
+
+					<table class="c-table ">
+
+						<thead class="c-table__header">
+
+							<tr class="c-table__header-row">
+							<th scope="col" class="c-table__header-cell ">Class Name</th>
+							<th scope="col" class="c-table__header-cell ">Description</th>
+							</tr><!-- c-table__header-row -->
+
+						</thead><!-- end c-table__header -->
+
+						<tbody class="c-table__body ">
+							{% for class in page.classes %}
+								<tr class="c-table__row ">
+
+									<td class="c-table__cell ">
+										<code class="u-no-wrap">
+											{{ class.className }}
+										</code>
+									</td>
+
+									<td class="c-table__cell ">
+										{% capture desc %}{{ class.description }}{% endcapture %}
+										{% if class.description %}{{ desc | markdownify }}{% endif %}
+									</td>
+
+								</tr><!-- end c-table__row -->
+							{% endfor %}
+
+
+						</tbody><!-- end c-table__body -->
+
+					</table><!--end c-table-->
+
+				</div><!--end c-table-container-->
+			{% endif %}
+
+		</section><!-- end c-section -->
+
+		<section class="c-section c-footer__copyright u-background-color--gray--light u-padding--half">
+
+			<h2 class="u-font--secondary--m u-theme--color--darker">Fine print</h2>
 
 			<ul>
-        <li>Last updated: {{ page.last_modified_at | date: '%A %d-%B-%Y at %H:%M:%S' }}</li>
-        {% for print in page.fine-print %}
-          <li>Version: {{ print.version }}</li>
-          <li>Last Updated: {{ print.update }}</li>
-          <li>Owner: <a href="#">{{ print.owner }}</a></li>
-        {% endfor %}
-      </ul>
+				<li>Last updated: {{ page.last_modified_at | date: '%A %d-%B-%Y at %H:%M:%S' }}</li>
 
-</section><!-- end c-section -->
+				{% for print in page.fine-print %}
+					<li>Version: {{ print.version }}</li>
+					<li>Last Updated: {{ print.update }}</li>
+					<li>Owner: <a href="#">{{ print.owner }}</a></li>
+				{% endfor %}
+			</ul>
+
+		</section><!-- end c-section --></div>
 
 </article>

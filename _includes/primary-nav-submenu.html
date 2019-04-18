@@ -2,7 +2,7 @@
 
 	{% for my_subpage in site.pages %}
 
-		{% if my_subpage.subgroup == include.subgroup and my_subpage.layout == "component-category" %}
+		{% if my_subpage.group == include.group and my_subpage.subgroup == include.subgroup and my_subpage.layout == "component-category" %}
 
 			<li class="c-primary-nav__subitem {% if page.subgroup == include.subgroup %}is-active{% endif %}">
 
@@ -18,7 +18,7 @@
 
 	{% for my_subpage in site.pages %}
 
-		{% if my_subpage.subgroup == include.subgroup and my_subpage.layout != "component-category" and my_subpage.status != "Planned" %}
+		{% if my_subpage.group == include.group and my_subpage.subgroup == include.subgroup and my_subpage.layout != "component-category" and my_subpage.status != "Planned" %}
 
 			<li class="c-primary-nav__subitem {% if page.subgroup == include.subgroup %}is-active{% endif %}">
 

@@ -1,3 +1,7 @@
+  <div class="c-text-copied-modal">
+  	<div class="c-text-copied-modal--text">Copied!</div>
+  </div>
+
   <script src="{{ " /js/vendor/jquery-3.1.0.min.js " | prepend: site.baseurl }}"></script>
   <script src="{{ " /js/vendor/prism.js " | prepend: site.baseurl }}"></script>
   <script src="{{ " /js/vendor/iframe-resizer.min.js " | prepend: site.baseurl }}"></script>
@@ -6,3 +10,88 @@
   <script src="{{ " /js/prism.js " | prepend: site.baseurl }}"></script>
 
   <script src="/v3/js/script.min.js" type="text/javascript"></script>
+
+  <script>
+	jQuery( function( $ ) {
+		function copyToClipboard( string, element ) {
+			// Create temporary textarea with string:
+			var textarea = document.createElement( 'textarea' );
+			textarea.value = string;
+			textarea.setAttribute( 'readonly', '' );
+			textarea.style.position = 'absolute';
+			textarea.style.left = '-9999px';
+			document.body.appendChild( textarea );
+
+			// Check for existing selection:
+			var selected = false
+
+			if ( document.getSelection().rangeCount > 0 ) {
+				selected = document.getSelection().getRangeAt( 0 )
+			}
+
+			// Select, copy string, cleanup:
+			textarea.select();
+			document.execCommand( 'copy' );
+			document.body.removeChild( textarea );
+
+			// Restore the previous selection:
+			if ( selected ) {
+				document.getSelection().removeAllRanges();
+				document.getSelection().addRange( selected );
+			}
+
+			// Update UI:
+			document.body.classList.add( 'u-has-copied' );
+			element.classList.add( 'u-is-copied' );
+
+			setTimeout( function() {
+				document.body.classList.remove( 'u-has-copied' );
+				element.classList.remove( 'u-is-copied' );
+			}, 1000 )
+		}
+
+		// Color swatch text copy:
+		$( '.js-copy-text' ).on( 'click', function() {
+			copyToClipboard( $( this ).data( 'value' ), $( this ).get( 0 ) );
+		} );
+
+		// Add space to bottom of preview iframes:
+		$( '.iffframe__iframe' ).on( 'load', function() {
+			$( this ).contents().find( 'body' ).css( 'padding-bottom', '100px' );
+		});
+
+		// Toggle the drawer navigation:
+		$( '.js-toggle-drawer-navigation' ).on( 'click', function() {
+			$( '.iffframe__iframe--drawer-navigation' ).contents().find( 'body .c-drawer' ).toggleClass( 'this-is-active' );
+		} );
+
+		// Add wrapper class for specific component previews:
+		$( '.iffframe__iframe--footer-primary-navigation' ).on( 'load', function() {
+			$( '.iffframe__iframe--footer-primary-navigation' ).contents().find( 'body' ).wrapInner( '<div class="u-padding u-theme--background-color--darker"></div>' );
+		} );
+		$( '.iffframe__iframe--footer-secondary-navigation' ).on( 'load', function() {
+			$( '.iffframe__iframe--footer-secondary-navigation' ).contents().find( 'body' ).wrapInner( '<div class="u-padding u-theme--background-color--darker"></div>' );
+		} );
+		$( '.iffframe__iframe--primary-navigation' ).on( 'load', function() {
+			$( '.iffframe__iframe--primary-navigation' ).contents().find( 'body' ).wrapInner( '<div class="c-header"><div class="c-header__nav-primary"></div></div>' );
+		} );
+		$( '.iffframe__iframe--secondary-navigation' ).on( 'load', function() {
+			$( '.iffframe__iframe--secondary-navigation' ).contents().find( 'body' ).wrapInner( '<div class="c-header"><div class="c-header__nav-secondary"></div></div>' );
+		} );
+		$( '.iffframe__iframe--logo-sda' ).on( 'load', function() {
+			$( '.iffframe__iframe--logo-sda' ).contents().find( 'body' ).wrapInner( '<div></div>' );
+		} );
+		$( '.iffframe__iframe--logo-sda-with-icon' ).on( 'load', function() {
+			$( '.iffframe__iframe--logo-sda-with-icon' ).contents().find( 'body' ).wrapInner( '<div class="u-path-fill--black"></div>' );
+		} );
+		$( '.iffframe__iframe--logo-sda-arabic' ).on( 'load', function() {
+			$( '.iffframe__iframe--logo-sda-arabic' ).contents().find( 'body' ).wrapInner( '<div></div>' );
+		} );
+		$( '.iffframe__iframe--logo-gain' ).on( 'load', function() {
+			$( '.iffframe__iframe--logo-gain' ).contents().find( 'body' ).wrapInner( '<div></div>' );
+		} );
+		$( '.iffframe__iframe--icon-logo-round' ).on( 'load', function() {
+			$( '.iffframe__iframe--icon-logo-round' ).contents().find( 'body' ).wrapInner( '<div class="u-path-fill--black"></div>' );
+		} );
+	} );
+  </script>

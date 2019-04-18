@@ -7,7 +7,13 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 
-  <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/favicon/apple-touch-icon.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon/favicon-32x32.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicon/favicon-16x16.png" | prepend: site.baseurl }}">
+  <link rel="manifest" href="{{ "/images/favicon/site.webmanifest" | prepend: site.baseurl }}">
+  <link rel="mask-icon" href="{{ "/images/favicon/safari-pinned-tab.svg" | prepend: site.baseurl }}" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,8 +27,6 @@
   <link rel="stylesheet" href="{{ " /css/main.css " | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ " /css/style-guide.css " | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ " /css/prism.css " | prepend: site.baseurl }}">
-
-  <link rel="icon" href="{{ " /favicon.ico " | prepend: site.baseurl }}">
 
   <script src="/v3/js/head-script.min.js" async></script>
 

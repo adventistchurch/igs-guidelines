@@ -29,6 +29,10 @@
   width: 100%;
   overflow: auto;
   overflow-x: auto !important; }
+  .iffframe__iframe--drawer-navigation {
+    height: 700px; }
+  .iffframe__iframe--primary-navigation {
+    height: 300px; }
 
 /**
  * Iffframe handle
@@ -175,6 +179,37 @@ code[class*="language-"], pre[class*="language-"] {
     width: 40px;
     height: 40px;
     display: inline-block; }
+
+.sg-swatch--value {
+  cursor: pointer;
+  user-select: none;
+  border: 1px dashed transparent; }
+  .sg-swatch--value:hover, .sg-swatch--value:focus {
+    background: #f5f5f5; }
+  .sg-swatch--value.u-is-copied {
+    border-color: #782832; }
+
+.c-text-copied-modal {
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s opacity; }
+  .u-has-copied .c-text-copied-modal {
+    opacity: 1; }
+  .c-text-copied-modal .c-text-copied-modal--text {
+    margin: auto;
+    padding: .25rem;
+    border: 2px solid #fff;
+    font-size: 1.25rem;
+    background: #f5f5f5; }
 
 .colorset {
   display: flex;

@@ -133,6 +133,14 @@
 /*------------------------------------*\
     #PRIMARY NAVIGATION
 \*------------------------------------*/
+@media (min-width: 901px) {
+  .c-sidebar {
+    margin-top: 1.25rem; }
+    .c-sidebar > .c-block-wrap {
+      height: 100%;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem; } }
+
 /**
  * Primary navigation most likely existing in the header
  */
@@ -143,6 +151,10 @@
   .c-header--vertical .c-primary-nav {
     margin-left: -1rem;
     margin-right: -1rem; }
+
+.c-block__heading {
+  position: relative;
+  top: -4px; }
 
 /**
  * Primary navigation list
@@ -178,7 +190,11 @@
  */
 .c-primary-nav__link {
   display: block;
-  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: -0.5rem;
+  padding: 0.5rem;
   cursor: pointer;
   /**
    * Primary navigation link within vertical header
@@ -238,7 +254,11 @@
  * Primary navigation sublist
  */
 .c-primary-nav__sublist {
+  margin-left: -0.5rem;
   border-left: 1px solid #bbb; }
+  .c-primary-nav__sublist .c-primary-nav__sublist {
+    margin-left: 0;
+    border-left: 0; }
 
 /**
  * Primary navigation list subnavigation first of type
@@ -247,7 +267,6 @@
  */
 .c-primary-nav__sublist:first-of-type {
   display: none;
-  margin-left: 1rem;
   /**
    * Primary navigation sublist within vertical header
    */
@@ -269,7 +288,6 @@
     @media all and (min-width: 62em) {
       .c-primary-nav__item.is-active .c-primary-nav__sublist:first-of-type {
         padding: 0 1rem;
-        margin: 0;
         top: 100%;
         z-index: 6;
         min-width: 8rem; } }
@@ -281,9 +299,6 @@
         margin-left: 1rem;
         padding: 0;
         position: static; } }
-  @media all and (min-width: 62em) {
-    .c-primary-nav__sublist:first-of-type {
-      margin-left: 0; } }
 
 /**
  * Primary navigation sublink

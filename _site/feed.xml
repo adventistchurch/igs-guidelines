@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Jul 2018 20:51:34 -0400</pubDate>
-    <lastBuildDate>Thu, 05 Jul 2018 20:51:34 -0400</lastBuildDate>
+    <pubDate>Tue, 12 Feb 2019 12:11:46 +1100</pubDate>
+    <lastBuildDate>Tue, 12 Feb 2019 12:11:46 +1100</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
@@ -20,7 +20,7 @@
   &lt;li&gt;Of new features&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sun, 14 May 2017 02:00:00 -0400</pubDate>
+        <pubDate>Sun, 14 May 2017 16:00:00 +1000</pubDate>
         <link>http://localhost:4000/update/2017/05/14/v1/</link>
         <guid isPermaLink="true">http://localhost:4000/update/2017/05/14/v1/</guid>
         
@@ -33,7 +33,7 @@
         <title>Initial Release</title>
         <description>&lt;p&gt;This is the blog post description announcing the initial release of the design system. Here you can talk about what contents the design system contains, where to find things, who’s involved with the system, and so on.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 13 May 2017 02:00:00 -0400</pubDate>
+        <pubDate>Sat, 13 May 2017 16:00:00 +1000</pubDate>
         <link>http://localhost:4000/update/2017/05/13/initial-release/</link>
         <guid isPermaLink="true">http://localhost:4000/update/2017/05/13/initial-release/</guid>
         

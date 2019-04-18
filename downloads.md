@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Downloads
-description: Links to repositories, design templates, tools, and so on.
+description:
 ---
-Check out [Carbon Design System's wonderful tools and resources page](http://carbondesignsystem.com/resources) for inspiration.
+
+Download the logo, design libraries, and toolkit here:
+
+[identity.adventist.org/downloads](https://identity.adventist.org/downloads/)
